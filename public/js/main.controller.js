@@ -8,4 +8,10 @@
          $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
     };
+         $scope.$watch('gameOver', function() {
+
+   });
+        $scope.change = function() {
+    
+      };
     }

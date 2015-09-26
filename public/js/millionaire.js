@@ -46,7 +46,7 @@ var MillionaireModel = function(data) {
 	var self = this;
 
 	// The 15 questions of this game
-    this.questions = data.questions;
+    this.questions = data;
 
     // A flag to keep multiple selections
     // out while transitioning levels
@@ -96,6 +96,7 @@ var MillionaireModel = function(data) {
  			$("#answer-four").fadeOut('slow');
  		}
  	}
+    self.gameOver = false;
     
     self.audience = function(item, event) {
  		if(self.transitioning)
@@ -131,8 +132,7 @@ var MillionaireModel = function(data) {
  		$("#" + elm).slideUp('slow', function() {
  			startSound('rightsound', false);
  			$("#" + elm).css('background', 'green').slideDown('slow', function() {
-                 console.log($(".myactive").data('amt'));
-                console.log("HERE");
+                
  				self.money($(".myactive").data('amt'));
                
  				if(self.level() + 1 > 15) {
@@ -155,14 +155,16 @@ var MillionaireModel = function(data) {
 
  	// Executes the proceedure of guessing incorrectly, losing the game.
  	self.wrongAnswer = function(elm) {
+
  		$("#" + elm).slideUp('slow', function() {
  			startSound('wrongsound', false);
  			$("#" + elm).css('background', 'red').slideDown('slow', function() {
- 				$("#game").fadeOut('slow', function() {
- 					$("#game-over").html('Game Over!');
- 					$("#game-over").fadeIn('slow');
- 					self.transitioning = false;
- 				});
+// 				$("#game").fadeOut('slow', function() {
+// 					$("#game-over").html('Game Over!');
+// 					$("#game-over").fadeIn('slow');
+// 					self.transitioning = false;
+// 				});
+                self.gameOver = true;
  			});
  		});
  	}
@@ -170,7 +172,7 @@ var MillionaireModel = function(data) {
  	// Gets the money formatted string of the current won amount of money.
  	self.formatMoney = function() {
 	   // return self.money().money(2, '.', ',');
-        console.log(self.money().money(2,'.',','));
+       
          return self.money().money(2,'.',',');
 	}
 };
@@ -180,8 +182,9 @@ var MillionaireModel = function(data) {
 // being created
 $(document).ready(function() {
     //ko.applyBindings(new MillionaireModel(data.games[0]));
-	$.getJSON("questions.json", function(data) {
-         ko.applyBindings(new MillionaireModel(data.games[0]));
+	$.getJSON("/tmpData", function(data) {
+        console.log(data);
+         ko.applyBindings(new MillionaireModel(data));
         startSound('background', true);
 				$("#game").fadeIn('slow');
 //		for(var i = 1; i <= data.games.length; i++) {

@@ -1,0 +1,34 @@
+<accordion-group is-open="isopen" id={{item.id}} >
+            <accordion-heading >
+                <span>
+            {{item.question}}<br />
+                
+                    
+        </span>
+            </accordion-heading>
+            <ol>
+                <li ng-repeat="num in item.content">{{num}}</li>
+            </ol>
+            <!--
+            <div>
+                {{item.content[item.correct]}}
+            </div>
+-->
+            <accordion close-others="true">
+                <accordion-group is-open="false">
+                    <accordion-heading>
+                        <span>
+           Show Answer
+                
+                    
+        </span>
+                    </accordion-heading>
+                    {{item.content[item.correct]}}
+                    <!--
+            <div>
+                {{item.content[item.correct]}}
+            </div>
+-->
+                </accordion-group>
+            </accordion>
+        </accordion-group>

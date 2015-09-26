@@ -7,7 +7,16 @@ var LocalStrategy = require('passport-local').Strategy;
 var passport = require('passport');
 var bCrypt = require('bcrypt-nodejs');
 var expressSession = require('express-session');
+var fs = require('fs');
 
+
+var questionsFile = __dirname + '/../public/questions.json';
+fs.readFile(questionsFile, 'utf8', function(err, data) {
+    //console.log(err);
+    //console.log(data);
+	questions = JSON.parse(data);
+	questions = questions['games'][0]['questions']
+});
 
 var createHash = function(password){
  return bCrypt.hashSync(password, bCrypt.genSaltSync(10), null);
@@ -158,4 +167,35 @@ module.exports = function (app) {
         res.render('home.html');
     });
 
+    app.post('/data', isAuthenticated, function (req, res) {
+        console.log("here");
+	var category = req.body.category;
+	var jsonResponse = [];
+	for (i = 0; i < questions.length; i++) { 
+ 	   if(questions[i]['category'] == category){
+		jsonResponse.push(questions[i]);
+		}
+	}
+	res.send(JSON.stringify(jsonResponse));
+    });
+
+    app.get('/randData', isAuthenticated, function(req, res){
+	var jsonResponse = [];
+	for ( i = 0; i < 16; i++) {
+		jsonResponse.push(questions[Math.floor(Math.random()*questions.length)])
+	}
+	
+	//its a hack... we know...
+	fs.writeFile('tmpFile', JSON.stringify(jsonResponse), function(err) {
+	});
+
+	res.send(JSON.stringify(jsonResponse));
+
+    });
+
+    app.get('/tmpData', isAuthenticated, function(req, res){
+	fs.readFile('tmpFile', 'utf8', function(err, data) {
+		res.send(data);
+	});
+    });
 };
