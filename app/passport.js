@@ -166,7 +166,7 @@ module.exports = function (app) {
 
     app.post('/data', isAuthenticated, function (req, res) {
 	var category = req.body.category;
-	var jsonResponse = []
+	var jsonResponse = [];
 	for (i = 0; i < questions.length; i++) { 
  	   if(questions[i]['category'] == category){
 		jsonResponse.push(questions[i]);
@@ -175,4 +175,9 @@ module.exports = function (app) {
 	res.send(JSON.stringify(jsonResponse));
     });
 
+    app.post('/randData', isAuthenticated, function(req, res){
+
+	
+
+    });
 };
