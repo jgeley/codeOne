@@ -167,8 +167,40 @@ margin-bottom: 0px;
 .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus{
  color:black;   
 }
+#jumbo {
+    float:center;
+    border-radius: 6px;
+    
+}
 
 #accordions{
     padding-left: 10%;
     padding-right: 10%;
+}
+
+#stage1 { 
+  height:100%;
+    position:relative;
+  background: url(../img/college.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.vertical-center {
+   
+  width: 50%;
+    margin: 0 auto;
+width:50%;
+  display: flex;
+  align-items: center;
+    
+}
+.container {
+/*     border-top:100px;*/
+}
+
+.surv{
+      border-radius: 0px;
 }

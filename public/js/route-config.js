@@ -16,6 +16,22 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
       activetab: 'study'
     }
     )
+  .state('stage1', {
+      url: "/stage1",
+       views: {
+        "mainView": { templateUrl: "views/stage1.html" }
+      },
+      activetab: 'stage1'
+    }
+    )
+  .state('stage2', {
+      url: "/stage2",
+       views: {
+        "mainView": { templateUrl: "views/stage1.html" }
+      },
+      activetab: 'stage2'
+    }
+    )
 //      .state('budget', {
 //      url: "/study/budget",
 //       views: {
