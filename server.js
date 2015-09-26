@@ -16,7 +16,7 @@ var flash = require('connect-flash');
 var db = require('./config/db');
 
 // set our port
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 80;
 
 var passport = require('passport');
 var expressSession = require('express-session');
