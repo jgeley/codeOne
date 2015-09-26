@@ -46,7 +46,7 @@ var MillionaireModel = function(data) {
 	var self = this;
 
 	// The 15 questions of this game
-    this.questions = data.questions;
+    this.questions = data;
 
     // A flag to keep multiple selections
     // out while transitioning levels
@@ -183,8 +183,9 @@ var MillionaireModel = function(data) {
 // being created
 $(document).ready(function() {
     //ko.applyBindings(new MillionaireModel(data.games[0]));
-	$.getJSON("questions.json", function(data) {
-         ko.applyBindings(new MillionaireModel(data.games[0]));
+	$.getJSON("/randData", function(data) {
+        console.log(data);
+         ko.applyBindings(new MillionaireModel(data));
         startSound('background', true);
 				$("#game").fadeIn('slow');
 //		for(var i = 1; i <= data.games.length; i++) {

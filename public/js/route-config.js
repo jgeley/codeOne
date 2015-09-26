@@ -9,7 +9,7 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
     }
     )
   .state('study', {
-      url: "/study/{category}",
+      url: "/study/{category}?id",
        views: {
         "mainView": { templateUrl: "views/study.html" }
       },

@@ -79,10 +79,10 @@ angular.module('app').controller('ModalDemoCtrl', function ($scope, $modal, $log
                 };
 
                 $scope.animationsEnabled = true;
-                $http.get("questions.json")
+                $http.get("/tmpData")
                     .success(function (response) {
-                        console.log(response.games[0].questions);
-                        $scope.questions = response.games[0].questions;
+                        console.log(response);
+                        $scope.questions = response;
                     });
                 $scope.open = function (size) {
 
@@ -195,22 +195,26 @@ angular.module('app').controller('ModalDemoCtrl', function ($scope, $modal, $log
         // It is not the same as the $modal service used above.
 
         angular.module('app').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items, $http,$stateParams,$state) {
-            $http.get("questions.json")
+            $http.get("/tmpData")
                 .success(function (response) {
-                    console.log(response.games[0].questions);
-                    $scope.questions = response.games[0].questions;
+                    console.log(response);
+                    $scope.questions = response;
                     $scope.rightAnswer = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].content[$scope.questions[document.getElementById('levelDiv').innerHTML - 1].correct];
                      $scope.hint = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].tip;
                   $scope.category = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].category;
+                $scope.id = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].id;
                     //$scope.hint = "hint goes here";
                 });
 
             $scope.goToAnswer = function () {
+                $modalInstance.close();
                 $stateParams.category = $scope.category;
-                $state.go('study',{category: $scope.category});
+                $stateParams.id = $scope.id;
+                $state.go('study',{category: $scope.category, id:$scope.id});
             };
             
             $scope.ok = function () {
+                
                 location.reload();
             };
 

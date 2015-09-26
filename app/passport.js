@@ -179,9 +179,9 @@ module.exports = function (app) {
 	res.send(JSON.stringify(jsonResponse));
     });
 
-    app.post('/randData', isAuthenticated, function(req, res){
+    app.get('/randData', isAuthenticated, function(req, res){
 	var jsonResponse = [];
-	for ( i = 0; i < 10; i++) {
+	for ( i = 0; i < 16; i++) {
 		jsonResponse.push(questions[Math.floor(Math.random()*questions.length)])
 	}
 	
