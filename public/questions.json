@@ -286,7 +286,7 @@
 					],
 					"correct" : 1,
 					"tip" : "These organizations don't want to prolong payments.",
-					"ed" : "",
+					"ed" : "It is what it is.",
 				  	"category" : "credit"
 				},
 				{
@@ -298,8 +298,9 @@
 						"$30"
 					],
 					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "20 percent of ...",
+					"ed" : "The rule states that loans shouldn't be more than 20 percent of income.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "A credit card issued through a credit union would be an  example of a ________ card?",
@@ -310,8 +311,9 @@
 						"proprietary"
 					],
 					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Credit unions and this are very similar.",
+					"ed" : "Credit unions don't issue travel, store or proprietary cards.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "The grace period refers to the time?",
@@ -322,8 +324,10 @@
 						"used for calculating interest"
 					],
 					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "When grace ends, consequences begin.",
+					"ed" : "The grace period is a predefined period of time that repayment of a loan is expected.",
+				  	"category" : "credit"
+
 				},
 				{
 					"question" : "Comparing the APR among several credit cards allows you to obtain the?",
@@ -334,8 +338,9 @@
 						"least expensive method of calculating interest"
 					],
 					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "APR = annual percentage 'rate'",
+					"ed" : "APR corresponds to interest rate.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "If a billing error occurs on a credit statement, a consumer has ____ days to notify the creditor",
@@ -346,8 +351,9 @@
 					  "120"
 					],
 					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "What is normally two grace periods?",
+					"ed" : "This is the set time allowed.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "The most reliable source for buying a used car is usually?",
@@ -358,8 +364,9 @@
 						"private party sales"
 					],
 					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Which is most closely linked to the market?",
+					"ed" : "Car dealer's businesses depend directly on the perception of their sole product.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "_______ warranty refers to the fact that a product will do what it is designed to do?",
@@ -370,8 +377,9 @@
 						"An unexpired manufacturer's"
 					],
 					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Which answer seems to reflect the idea about how something works?",
+					"ed" : "Extended warranties provide larger periods of covered service. Dealer and unexpired manufacturer's warranties don't refer to an intended use.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "The Truth-in-Lending law requires that borrowers be informed of the?",
@@ -382,8 +390,9 @@
 						"reasons a person has been denied credit"
 					],
 					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Which number is most important for the borrower to know?",
+					"ed" : "This federal law was established in 1968 in order to aid consumers in understanding the terms and cost of a loan.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "The auto insurance coverage for damage to your vehicle as a result of an accident is called?",
@@ -394,8 +403,9 @@
 						"collision"
 					],
 					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "What is it called when an object strikes another?",
+					"ed" : "Property damage is coverage for when a vehicle damages a non vehicle. Comprehensive and liability are tiers of coverage over a vehicle.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "Doctor costs for injuries to others resulting from an accident are covered by _________ liability.",
@@ -406,8 +416,9 @@
 						"comprehensive"
 					],
 					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Which answer seems most specific?",
+					"ed" : "Collision and comprehensive coverages are for vehicles and not passengers.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "The lowest interest rate is usually earned on a?",
@@ -418,8 +429,9 @@
 						"mutual fund"
 					],
 					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "One of these does not accrue interest.",
+					"ed" : "A passbook account is used to record deposit account transactions.",
+				  	"category" : "savings"
 				},
 				{
 					"question" : "The total interest earned on $100 for two years at 10 percent (compounded annually) would be?",
@@ -430,8 +442,9 @@
 						"$10"
 					],
 					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Interest for one year is principle * percent/100.",
+					"ed" : "The first year the $100 would increase to $110. The second year $110 would become $121. $121 - $100 = $21.",
+				  	"category" : "savings"
 				},
 				{
 					"question" : "Based on the rule of 72, money earning 6 percent would take about _____ years to double.",
@@ -442,8 +455,9 @@
 						"12"
 					],
 					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "The rule of 72 states that a principle will double in the years returned by dividing 72 by the percent of growth.",
+					"ed" : "72 divided by 6 equals 12.",
+				  	"category" : "savings"
 				},
 				{
 					"question" : "An example of a company’s debt is a",
@@ -454,8 +468,9 @@
 						"municipal bond"
 					],
 					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Which answer contains a word often used in conjunction with companies.",
+					"ed" : "A bond is a loan offered to a company or government from an investor.",
+				  	"category" : "savings"
 				},
 				{
 					"question" : "The investment with the most risk would be",
@@ -466,8 +481,9 @@
 						"corporate bonds"
 					],
 					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "One of these has a perception that can change very dynamically.",
+					"ed" : "Stocks are ownership of shares of a company. The perceived value of a company can change very quickly.",
+				  	"category" : "savings"
 				},
 				{
 					"question" : "A common cause of financial difficulties is?",
@@ -478,8 +494,9 @@
 						"not having enough life insurance"
 					],
 					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Control of this provides added stability.",
+					"ed" : "Financial stability is tied to money management discipline.",
+				  	"category" : "trouble"
 				},
 				{
 					"question" : "A nonprofit organization that provides financial counseling is?",
@@ -490,8 +507,9 @@
 						"the National Credit Union Administration"
 					],
 					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Who benefits most from financial counseling?",
+					"ed" : "The FDIC provides insurance of deposits. The BBB is a nonprofit that attempts to settle disputes between consumers and businesses.",
+				  	"category" : "trouble"
 				},
 				{
 					"question" : "The purpose of a consolidation loan is to",
@@ -502,8 +520,9 @@
 						"reduce the amount owed for federal income taxes"
 					],
 					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Which answer would make repayment simpler?",
+					"ed" : "A consolidation loan does not deduct amounts owed, nor allows a re-prioritization of credit debts, nor does it reduce an amount owed.",
+				  	"category" : "trouble"
 				},
 				{
 					"question" : "A example of a fair debt-collection practice would be to",
@@ -514,8 +533,9 @@
 						"call a debtor at home before 8 p.m."
 					],
 					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Which answer is least disruptive towards a customer?",
+					"ed" : "The fair debt-collection act prohibits debt collectors from using abusive, unfair, or deceptive practices to collect from you.",
+				  	"category" : "trouble"
 				},
 				{
 					"question" : "Bankruptcy refers to the process of",
@@ -526,8 +546,9 @@
 						"using court action to have payments owed deducted from your paycheck"
 					],
 					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Which answer sounds too good to be true?",
+					"ed" : "Even though bankruptcy may allow for reduction or elimination of debts, there are some debts that can't be removed.",
+				  	"category" : "trouble"
 				},
 				{
 					"question" : "An example of public records would be?",
@@ -538,8 +559,9 @@
 						"an employment application on file with a company"
 					],
 					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "One of these answers does not contain protected information.",
+					"ed" : "The information contained in a credit card statement, medical record or employment application are not considered public.",
+				  	"category" : "privacy"
 				},
 				{
 					"question" : "Voter registration records are considered to be",
@@ -550,8 +572,9 @@
 						"a database profile"
 					],
 					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "The answer may seem to differ from common sense.",
+					"ed" : "While voter registration records are normally public, this is not the case in all states.",
+				  	"category" : "privacy"
 				},
 				{
 					"question" : "A credit report would include a person’s",
@@ -562,8 +585,9 @@
 						"balances for installment accounts"
 					],
 					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "A credit report should cover what kind of data?",
+					"ed" : "Tax data, utility balances and salary history are not included in credit reports.",
+				  	"category" : "privacy"
 				},
 				{
 					"question" : "The organization that provides companies with information on a person’s past use of credit is",
@@ -574,8 +598,9 @@
 						"a credit bureau"
 					],
 					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "One of these answers has a word that refers to containing something.",
+					"ed" : "Credit bureaus collect and provide historical credit information. Additionally individuals are able to receive three free credit reports per year.",
+				  	"category" : "privacy"
 				},
 				{
 					"question" : "When using an ATM, your PIN is designed to",
@@ -585,237 +610,10 @@
 						"provide security as an authorized user",
 						"indicate your credit rating"
 					],
-					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
-				},
-			  	{
-					"question" : "Which is commonly considered a flexible expense?",
-					"content" : [
-				  		"Rent",
-				  		"A mortgage payment",
-				  		"Home insurance",
-				  		"Entertainment"
-					],
-					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
-			  	},
-				{
-					"question" : "The final phase of the budgeting process is to",
-					"content" : [
-						"set personal and financial goals",
-						"compare your budget to what you have actually spent",
-						"review financial progress",
-						"monitor current spending patterns"
-					],
 					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "An example of a long-term goal would be",
-					"content" : [
-						"an annual vacation",
-						"saving for retirement",
-						"buying a used car",
-						"completing college within the next six months"
-					],
-					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "A clearly written financial goal would be",
-					"content" : [
-						"To save money for college for the next five years",
-						"To pay off credit card bills in 12 months",
-						"To invest in an international mutual fund for retirement",
-						"To establish an emergency fund of $4,000 in 18 months"
-					],
-					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "An example of a fixed expense is",
-					"content" : [
-						"clothing",
-						"auto insurance",
-						"an electric bill",
-						"educational expenses"
-					],
-					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "_____ is commonly considered a flexible expense",
-					"content" : [
-						"Rent",
-						"A mortgage payment",
-						"Home insurance",
-						"Entertainment"
-					],
-					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "A common flexible expense associated with apartment renting is",
-					"content" : [
-						"a security deposit",
-						"apartment insurance",
-						"electricity",
-						"rent"
-					],
-					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "A ______deposit refers to money held to cover possible damage in an apartment",
-					"content" : [
-						"cleaning",
-						"security",
-						"telephone",
-						"utilities"
-					],
-					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "A common moving-in cost for an apartment would be",
-					"content" : [
-						"a down payment",
-						"building insurance",
-						"real estate taxes",
-						"a security deposit"
-					],
-					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "A long-term goal would be to",
-					"content" : [
-						"rent an apartment",
-						"own an apartment building",
-						"move to a larger apartment",
-						"buy additional furniture"
-					],
-					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "The agreement between a renter and a landlord is a",
-					"content" : [
-						"security deposit",
-						"mortgage",
-						"lease",
-						"deed"
-					],
-					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "A common disadvantage of buying a home is",
-					"content" : [
-						"few financial benefits",
-						"limited mobility",
-						"restrictions on decorating and having pets",
-						"conditions in the lease"
-					],
-					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "The home-buying process starts with",
-					"content" : [
-						"locating and evaluating a home",
-						"pricing the property",
-						"determining home ownership needs",
-						"obtaining an appraisal of the property"
-					],
-					"correct" : 2,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "The amount of a mortgage a person can afford is affected by",
-					"content" : [
-						"the location of the house",
-						"her or his income",
-						"the cost of insurance",
-						"his or her age"
-					],
-					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "A ______ mortgage has a very large final payment",
-					"content" : [
-						"conventional",
-						"graduated-payment",
-						"shared-appreciation",
-						"balloon"
-					],
-					"correct" : 3,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "The charges for settling a real estate transaction are also called ____ costs",
-					"content" : [
-						"mortgage",
-						"closing",
-						"possession",
-						"selling"
-					],
-					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "",
-					"content" : [
-						"",
-						"",
-						"",
-						""
-					],
-					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "",
-					"content" : [
-						"",
-						"",
-						"",
-						""
-					],
-					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
-				},
-				{
-					"question" : "",
-					"content" : [
-						"",
-						"",
-						"",
-						""
-					],
-					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "PIN stands for personal identification number",
+					"ed" : "A PIN certainly does not indicate a current balance or credit rating.",
+				  	"category" : "privacy"
 				}
 		    ]
 		}
