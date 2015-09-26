@@ -260,7 +260,7 @@
 					],
 					"correct" : 3,
 					"tip" : "This word is similar to ability.",
-					"ed" : "",
+					"ed" : "Capital refers to wealth or assets while collateral refers to assets used to secure credit.",
 				  	"category" : "credit"
 				},
 				{
@@ -272,8 +272,9 @@
 						"request to view her or his credit file"
 					],
 					"correct" : 0,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "Which shows commitment?",
+					"ed" : "Using an ATM doesn't relate to credit use. Requesting to view a credit file doesn't build credit.",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "Utility companies and medical service organizations commonly offer what kind of credit?",
@@ -284,8 +285,9 @@
 						"retail"
 					],
 					"correct" : 1,
-					"tip" : "",
-					"ed" : ""
+					"tip" : "These organizations don't want to prolong payments.",
+					"ed" : "",
+				  	"category" : "credit"
 				},
 				{
 					"question" : "Using the 20-10 rule, a person earning $1,500 a month should not have monthly credit payments that exceed?",
@@ -598,11 +600,7 @@
 					"correct" : 3,
 					"tip" : "",
 					"ed" : ""
-			  	}
-			]
-		},
-		{
-		    "questions" : [
+			  	},
 				{
 					"question" : "The final phase of the budgeting process is to",
 					"content" : [
@@ -820,21 +818,6 @@
 					"ed" : ""
 				}
 		    ]
-		},
-		{
-		    "questions" : [
-
-			]
-		},
-		{
-		    "questions" : [
-
-			]
-		},
-		{
-		    "questions" : [
-
-			]
 		}
 	]
 }
