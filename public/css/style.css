@@ -33,7 +33,7 @@ audio {
 	font-size: 1.3em;
 }
 
-.active {
+.myactive {
 	color: green;
 	font-weight: bold;
 	text-decoration: underline;

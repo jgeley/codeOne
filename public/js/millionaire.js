@@ -124,7 +124,10 @@ var MillionaireModel = function(data) {
  		$("#" + elm).slideUp('slow', function() {
  			startSound('rightsound', false);
  			$("#" + elm).css('background', 'green').slideDown('slow', function() {
- 				self.money($(".active").data('amt'));
+                 console.log($(".myactive").data('amt'));
+                console.log("HERE");
+ 				self.money($(".myactive").data('amt'));
+               
  				if(self.level() + 1 > 15) {
 	 				$("#game").fadeOut('slow', function() {
 	 					$("#game-over").html('You Win!');
@@ -159,7 +162,9 @@ var MillionaireModel = function(data) {
 
  	// Gets the money formatted string of the current won amount of money.
  	self.formatMoney = function() {
-	    return self.money().money(2, '.', ',');
+	   // return self.money().money(2, '.', ',');
+        console.log(self.money().money(2,'.',','));
+         return self.money().money(2,'.',',');
 	}
 };
 
@@ -167,18 +172,22 @@ var MillionaireModel = function(data) {
 // the start game functionality to trigger a game model
 // being created
 $(document).ready(function() {
+    //ko.applyBindings(new MillionaireModel(data.games[0]));
 	$.getJSON("questions.json", function(data) {
-		for(var i = 1; i <= data.games.length; i++) {
-			$("#problem-set").append('<option value="' + i + '">' + i + '</option>');
-		}
-		$("#pre-start").show();
-		$("#start").click(function() {
-			var index = $('#problem-set').find(":selected").val() - 1;
-			ko.applyBindings(new MillionaireModel(data.games[index]));
-			$("#pre-start").fadeOut('slow', function() {
-				startSound('background', true);
+         ko.applyBindings(new MillionaireModel(data.games[0]));
+        startSound('background', true);
 				$("#game").fadeIn('slow');
-			});
-		});
+//		for(var i = 1; i <= data.games.length; i++) {
+//			$("#problem-set").append('<option value="' + i + '">' + i + '</option>');
+//		}
+//		$("#pre-start").show();
+//		$("#start").click(function() {
+//			var index = $('#problem-set').find(":selected").val() - 1;
+//			ko.applyBindings(new MillionaireModel(data.games[0]));
+//			$("#pre-start").fadeOut('slow', function() {
+//				startSound('background', true);
+//				$("#game").fadeIn('slow');
+//			});
+//		});
 	});
 });
