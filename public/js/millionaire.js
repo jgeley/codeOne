@@ -132,8 +132,7 @@ var MillionaireModel = function(data) {
  		$("#" + elm).slideUp('slow', function() {
  			startSound('rightsound', false);
  			$("#" + elm).css('background', 'green').slideDown('slow', function() {
-                 console.log($(".myactive").data('amt'));
-                console.log("HERE");
+                
  				self.money($(".myactive").data('amt'));
                
  				if(self.level() + 1 > 15) {
@@ -173,7 +172,7 @@ var MillionaireModel = function(data) {
  	// Gets the money formatted string of the current won amount of money.
  	self.formatMoney = function() {
 	   // return self.money().money(2, '.', ',');
-        console.log(self.money().money(2,'.',','));
+       
          return self.money().money(2,'.',',');
 	}
 };
@@ -183,7 +182,7 @@ var MillionaireModel = function(data) {
 // being created
 $(document).ready(function() {
     //ko.applyBindings(new MillionaireModel(data.games[0]));
-	$.getJSON("/randData", function(data) {
+	$.getJSON("/tmpData", function(data) {
         console.log(data);
          ko.applyBindings(new MillionaireModel(data));
         startSound('background', true);
