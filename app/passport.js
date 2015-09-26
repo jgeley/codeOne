@@ -184,8 +184,18 @@ module.exports = function (app) {
 	for ( i = 0; i < 10; i++) {
 		jsonResponse.push(questions[Math.floor(Math.random()*questions.length)])
 	}
+	
+	//its a hack... we know...
+	fs.writeFile('tmpFile', JSON.stringify(jsonResponse), function(err) {
+	});
 
 	res.send(JSON.stringify(jsonResponse));
 
+    });
+
+    app.get('/tmpData', isAuthenticated, function(req, res){
+	fs.readFile('tmpFile', 'utf8', function(err, data) {
+		res.send(data);
+	});
     });
 };
