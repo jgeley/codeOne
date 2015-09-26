@@ -96,6 +96,7 @@ var MillionaireModel = function(data) {
  			$("#answer-four").fadeOut('slow');
  		}
  	}
+    self.gameOver = false;
     
     self.audience = function(item, event) {
  		if(self.transitioning)
@@ -155,14 +156,16 @@ var MillionaireModel = function(data) {
 
  	// Executes the proceedure of guessing incorrectly, losing the game.
  	self.wrongAnswer = function(elm) {
+
  		$("#" + elm).slideUp('slow', function() {
  			startSound('wrongsound', false);
  			$("#" + elm).css('background', 'red').slideDown('slow', function() {
- 				$("#game").fadeOut('slow', function() {
- 					$("#game-over").html('Game Over!');
- 					$("#game-over").fadeIn('slow');
- 					self.transitioning = false;
- 				});
+// 				$("#game").fadeOut('slow', function() {
+// 					$("#game-over").html('Game Over!');
+// 					$("#game-over").fadeIn('slow');
+// 					self.transitioning = false;
+// 				});
+                self.gameOver = true;
  			});
  		});
  	}
