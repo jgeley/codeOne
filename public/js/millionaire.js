@@ -96,6 +96,13 @@ var MillionaireModel = function(data) {
  			$("#answer-four").fadeOut('slow');
  		}
  	}
+    
+    self.audience = function(item, event) {
+ 		if(self.transitioning)
+ 			return;
+ 		$(event.target).fadeOut('slow');
+ 		
+ 	}
 
  	// Fades out an option used if possible
  	self.fadeOutOption = function(item, event) {

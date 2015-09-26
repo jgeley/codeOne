@@ -17,7 +17,7 @@
 		</div>
 
 		<!-- The actual game markup -->
-		<div id="game">
+		<div id="game" ng-controller="ModalDemoCtrl">
 			<div id="top">
 				<img src="img/logo.jpg" id="logo" />
 				<ul id="levels">
@@ -42,7 +42,7 @@
 			<div id="options">
 				<div id="fifty" class="options-button" data-bind="click: fifty"></div>
 				<div id="phone-friend" class="options-button" data-bind="click: fadeOutOption"></div>
-				<div id="audience" class="options-button" data-bind="click: fadeOutOption"></div>
+				<div id="audience" class="options-button" ng-click="open()" data-bind="click: audience"></div>
 				<div id="money">$<span data-bind="text: formatMoney()"></span></div>
 			</div>
 			<div id="question-box">
@@ -64,8 +64,21 @@
 				</div>
 			</div>
 		</div>
+<div >
+   
+
+    <button type="button" class="btn btn-default" ng-click="open()">Open me!</button>
+    <button type="button" class="btn btn-default" ng-click="open('lg')">Large modal</button>
+    <button type="button" class="btn btn-default" ng-click="open('sm')">Small modal</button>
+    <button type="button" class="btn btn-default" ng-click="toggleAnimation()">Toggle Animation ({{ animationsEnabled }})</button>
+    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+</div>
+
 
 		<!-- Script inclusion: JQuery for effects, Knockout for MVVM, millionaire.js for application -->
+        <script type="text/javascript" src="libs/Chart.js"></script>
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script type="text/javascript" src="js/knockout-3.0.0.js"></script>
 		<script type="text/javascript" src="js/millionaire.js"></script>
+<!--
+    -->
