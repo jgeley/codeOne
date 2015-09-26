@@ -9,6 +9,7 @@
                 category: $stateParams.category
             })
             .success(function (response) {
+            //alert($stateParams.category);
                 console.log(response);
                 $scope.questions = response;
 
@@ -37,12 +38,12 @@
             //            
             ////     document.getElementById($stateParams.id).isOpen= true;
             //});
-        $scope.$watch("questions", function (value) {  
-
-$timeout(function() {
-   $("#" + $stateParams.id).click(function(){ });
-     }, 1);
- });
+//        $scope.$watch("questions", function (value) {  
+//
+//$timeout(function() {
+//   $("#" + $stateParams.id).click(function(){ });
+//     }, 1);
+// });
         
 //        var object = document.getElementById("accordions");
 //object.onload=function(){$("#" + $stateParams.id).click(function () {
