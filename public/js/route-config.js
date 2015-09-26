@@ -62,6 +62,27 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
       },
       activetab: 'stage6'
     }
+    ).state('stage7', {
+      url: "/stage7",
+       views: {
+        "mainView": { templateUrl: "views/stage1.html" }
+      },
+      activetab: 'stage7'
+    }
+    ).state('stage8', {
+      url: "/stage8",
+       views: {
+        "mainView": { templateUrl: "views/stage1.html" }
+      },
+      activetab: 'stage8'
+    }
+    ).state('stage9', {
+      url: "/stage9",
+       views: {
+        "mainView": { templateUrl: "views/stage1.html" }
+      },
+      activetab: 'stage9'
+    }
     )
   .state('end', {
       url: "/end",

@@ -1,63 +1,13 @@
-<!--<div ng-controller="CarouselDemoCtrl" >
-  <div style="height: 505px">
-    <carousel interval="myInterval" no-wrap="noWrapSlides">
-      <slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
-        <div class="carousel-caption">
-          <h4>Slide {{$index}}</h4>
-          <p>{{slide.text}}</p>
-        </div>
-      </slide>
-    </carousel>
-  </div>
-</div>
--->
-
 <div ng-controller="studyCtrl" id="accordions">
     {{message}}
+    <div id="studyDiv">
+
+    </div>
     <accordion close-others="true">
         
        <accordion-directive ng-repeat="item in questions" item="item">
-           hi
         </accordion-directive>
-<!--
-        <accordion-group is-open="isopen" ng-init="init(item.id)" ng-repeat="item in questions" id={{item.id}}>
-            <accordion-heading >
-                <span>
-            {{item.question}}<br />
--->
-                
-                    
-<!--
-        </span>
-            </accordion-heading>
-            <ol>
-                <li ng-repeat="num in item.content">{{num}}</li>
-            </ol>
-            
-            <div>
-                {{item.content[item.correct]}}
-            </div>
 
-            <accordion close-others="true">
-                <accordion-group is-open="false">
-                    <accordion-heading>
-                        <span>
-           Show Answer
-                
--->
-                    
-<!--
-        </span>
-                    </accordion-heading>
-                    {{item.content[item.correct]}}
--->
-                    <!--
-            <div>
-                {{item.content[item.correct]}}
-            </div>
--->
-<!--                </accordion-group>-->
             </accordion>
         </accordion-group>
     </accordion>

@@ -96,6 +96,51 @@
             $scope.correctSolution = 0;
             document.getElementById("stage1").style.background = 'url(../img/college2.jpg) no-repeat center center fixed';
         }
+         if ($state.includes('stage7')) {
+             if ($rootScope.output === undefined || $rootScope.output === null) {
+                $rootScope.output = []
+            }
+            $scope.problem = "This is the problem2";
+            $scope.solutions = [['', ''], ['', ''], ['', '']];
+            $scope.solutions[0][0] = "Solution12";
+            $scope.solutions[0][1] = "why is this bad/good?";
+            $scope.solutions[1][0] = "Solution22";
+            $scope.solutions[1][1] = "why is this bad/good?";
+            $scope.solutions[2][0] = "Solution32";
+            $scope.solutions[2][1] = "why is this bad/good?";
+            $scope.correctSolution = 0;
+            document.getElementById("stage1").style.background = 'url(../img/college2.jpg) no-repeat center center fixed';
+        }
+         if ($state.includes('stage8')) {
+             if ($rootScope.output === undefined || $rootScope.output === null) {
+                $rootScope.output = []
+            }
+            $scope.problem = "This is the problem2";
+            $scope.solutions = [['', ''], ['', ''], ['', '']];
+            $scope.solutions[0][0] = "Solution12";
+            $scope.solutions[0][1] = "why is this bad/good?";
+            $scope.solutions[1][0] = "Solution22";
+            $scope.solutions[1][1] = "why is this bad/good?";
+            $scope.solutions[2][0] = "Solution32";
+            $scope.solutions[2][1] = "why is this bad/good?";
+            $scope.correctSolution = 0;
+            document.getElementById("stage1").style.background = 'url(../img/college2.jpg) no-repeat center center fixed';
+        }
+         if ($state.includes('stage9')) {
+             if ($rootScope.output === undefined || $rootScope.output === null) {
+                $rootScope.output = []
+            }
+            $scope.problem = "This is the problem2";
+            $scope.solutions = [['', ''], ['', ''], ['', '']];
+            $scope.solutions[0][0] = "Solution12";
+            $scope.solutions[0][1] = "why is this bad/good?";
+            $scope.solutions[1][0] = "Solution22";
+            $scope.solutions[1][1] = "why is this bad/good?";
+            $scope.solutions[2][0] = "Solution32";
+            $scope.solutions[2][1] = "why is this bad/good?";
+            $scope.correctSolution = 0;
+            document.getElementById("stage1").style.background = 'url(../img/college2.jpg) no-repeat center center fixed';
+        }
 
 
 
@@ -144,7 +189,22 @@
                     reload: true
                 });
             }
-             if ($state.includes('stage6')) {
+            if ($state.includes('stage6')) {
+                $state.go('stage7', {}, {
+                    reload: true
+                });
+            }
+            if ($state.includes('stage7')) {
+                $state.go('stage8', {}, {
+                    reload: true
+                });
+            }
+            if ($state.includes('stage8')) {
+                $state.go('stage9', {}, {
+                    reload: true
+                });
+            }
+             if ($state.includes('stage9')) {
                 $state.go('end', {}, {
                     reload: true
                 });
