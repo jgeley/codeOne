@@ -1,5 +1,5 @@
 body {
-	background: black;
+	
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -13,6 +13,7 @@ audio {
 
 #game {
 	display: none;
+    background: black;
 	text-align: center;
 }
 
