@@ -69,6 +69,7 @@ angular.module('app').controller('ModalDemoCtrl', function ($scope, $modal, $log
 
 
                         modalInstance.result.then(function (selectedItem) {
+                            
                             $scope.selected = selectedItem;
                         }, function () {
 
@@ -193,18 +194,24 @@ angular.module('app').controller('ModalDemoCtrl', function ($scope, $modal, $log
         // Please note that $modalInstance represents a modal window (instance) dependency.
         // It is not the same as the $modal service used above.
 
-        angular.module('app').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items, $http) {
+        angular.module('app').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items, $http,$stateParams,$state) {
             $http.get("questions.json")
                 .success(function (response) {
                     console.log(response.games[0].questions);
                     $scope.questions = response.games[0].questions;
                     $scope.rightAnswer = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].content[$scope.questions[document.getElementById('levelDiv').innerHTML - 1].correct];
-                    // $scope.hint = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].hint;
-                    $scope.hint = "hint goes here";
+                     $scope.hint = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].tip;
+                  $scope.category = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].category;
+                    //$scope.hint = "hint goes here";
                 });
 
+            $scope.goToAnswer = function () {
+                $stateParams.category = $scope.category;
+                $state.go('study',{category: $scope.category});
+            };
+            
             $scope.ok = function () {
-                $modalInstance.close();
+                location.reload();
             };
 
 

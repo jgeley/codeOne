@@ -9,8 +9,10 @@ var bCrypt = require('bcrypt-nodejs');
 var expressSession = require('express-session');
 var fs = require('fs');
 
-var questionsFile = '../public/questions.json';
+var questionsFile = __dirname +'/../public/questions.json';
 fs.readFile(questionsFile, 'utf8', function(err, data) {
+    //console.log(err);
+    //console.log(data);
 	questions = JSON.parse(data);
 	questions = questions['games'][0]['questions']
 });
@@ -165,6 +167,7 @@ module.exports = function (app) {
     });
 
     app.post('/data', isAuthenticated, function (req, res) {
+        console.log("here");
 	var category = req.body.category;
 	var jsonResponse = [];
 	for (i = 0; i < questions.length; i++) { 

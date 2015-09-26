@@ -16,8 +16,8 @@
 <div ng-controller="studyCtrl" id="accordions">
     {{message}}
     <accordion close-others="true">
-        <accordion-group is-open="isopen" ng-repeat="item in questions">
-            <accordion-heading>
+        <accordion-group is-open="isopen" ng-repeat="item in questions" id="item.id">
+            <accordion-heading >
                 <span>
             {{item.question}}<br />
                 
