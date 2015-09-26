@@ -181,7 +181,7 @@ module.exports = function (app) {
 		jsonResponse.push(questions[Math.floor(Math.random()*questions.length)])
 	}
 
-		
+	res.send(JSON.stringify(jsonResponse));
 
     });
 };
