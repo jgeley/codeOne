@@ -188,6 +188,17 @@ margin-bottom: 0px;
   background-size: cover;
 }
 
+#endStage { 
+  height:auto;
+    min-height:100%;
+    position:relative;
+  background: url(../img/island.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .vertical-center {
    
   width: 50%;
@@ -203,4 +214,8 @@ width:50%;
 
 .surv{
       border-radius: 0px;
+}
+
+.fullLength{
+    max-width=100%;
 }
