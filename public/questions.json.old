@@ -1,0 +1,840 @@
+{
+	"games" : [
+		{
+		    "questions" : [
+				{
+					"question" : "The final phase of the budgeting process is to?",
+					"content" : [
+						"set personal and financial goals",
+						"compare your budget to what you have actually spent",
+						"review financial progress",
+						"monitor current spending patterns"
+					],
+					"correct" : 2,
+					"tip" : "Think about what the big picture is.",
+					"ed" : "The best way to see progress is to review if your plan is meeting all your goals.",
+					"category" : "budget"
+				},
+		        {
+		            "question" : "Which of the following is an example of a long term goal?",
+		            "content" : [
+		                "saving for retirement",
+		                "an annual vacation",
+		                "buying a used car",
+		                "completing college within the next six months"
+		            ],
+		            "correct" : 0,
+				  	"tip" : "Think really far down the line.",
+				  	"ed" : "Purchases and vacations are short term. College has long term effects but the act of graduating is short term.",
+				  	"category" : "budget"
+				},
+		        {
+		            "question" : "Which of the following is a clearly written goal?",
+		            "content" : [
+		                "To save money for college for the next five years",
+		                "To pay off credit card bills in 12 months",
+		                "To invest in an international mutual fund for retirement",
+		                "To establish an emergency fund of $4,000 in 18 months"
+		            ],
+				  "correct" : 3,
+				  "tip" : "Which is most specific?",
+				  "ed" : "A clearly written goal should be as precise as possible to accurately measure success.",
+				  "category" : "budget"
+		        },
+			  	{
+					"question" : "Which is a fixed expense?",
+					"content" : [
+					  "clothing",
+					  "auto insurance",
+					  "an electric bill",
+					  "educational expenses"
+					],
+					"correct" : 1,
+					"tip" : "Which fluctuates in price least?",
+					"ed" : "Clothing, electricity use and educational expenses are fluid in cost.",
+				  	"category" : "budget"
+				},
+			  	{
+					"question" : "Which is a common flexible expense associated with apartment renting?",
+					"content" : [
+						"a security deposit",
+						"apartment insurance",
+						"electricity",
+						"rent"
+					],
+					"correct" : 2,
+					"tip" : "Which fluctuates month to month?",
+					"ed" : "Security deposits are one time costs. Apartment insurance and rent are commonly fixed price.",
+				 	"category" : "budget"
+			  	},
+				{
+					"question" : "Which deposit refers to money held to cover possible damage in an apartment?",
+					"content" : [
+						"cleaning",
+						"security",
+						"telephone",
+						"utilities"
+					],
+					"correct" : 1,
+					"tip" : "Which term is most similar to keeping something safe?",
+					"ed" : "Telephone and utility deposits are not related to apartments directly.",
+				  	"category" : "housing"
+				},
+				{
+					"question" : "A common moving-in cost for an apartment would be?",
+					"content" : [
+						"a down payment",
+						"building insurance",
+						"real estate taxes",
+						"a security deposit"
+					],
+					"correct" : 1,
+					"tip" : "Think of associated expenses separate from the apartment.",
+					"ed" : "Down payments and real estate taxes are related to buying a home. A security deposit must be paid before moving in.",
+				  	"category" : "housing"
+				},
+				{
+					"question" : "A long-term goal would be to?",
+					"content" : [
+						"rent an apartment",
+						"own an apartment building",
+						"move to a larger apartment",
+						"buy additional furniture"
+					],
+					"correct" : 3,
+					"tip" : "Think about what would last longer in your possession.",
+					"ed" : "Renting or moving to a larger apartment are short term goals.",
+				  	"category" : "budget"
+				},
+				{
+					"question" : "The agreement between a renter and a landlord is a?",
+					"content" : [
+						"security deposit",
+						"mortgage",
+						"lease",
+						"deed"
+					],
+					"correct" : 2,
+					"tip" : "Think of a word similar to renting.",
+					"ed" : "A security deposit isn't an agreement. Mortgages and deeds are normally related to property.",
+				  	"category" : "housing"
+				},
+				{
+					"question" : "A common disadvantage of buying a home is?",
+					"content" : [
+						"few financial benefits",
+						"limited mobility",
+						"restrictions on decorating and having pets",
+						"conditions in the lease"
+					],
+					"correct" : 1,
+					"tip" : "Owning a home is a commitment.",
+					"ed" : "Restrictions on decoration and pets are fewer with a purchased home compared to renting.",
+				  	"category" : "housing"
+				},
+				{
+					"question" : "The home-buying process starts with?",
+					"content" : [
+						"locating and evaluating a home",
+						"pricing the property",
+						"determining home ownership needs",
+						"obtaining an appraisal of the property"
+					],
+					"correct" : 2,
+					"tip" : "What are the priorities?",
+					"ed" : "Effective purchasing begins with a careful evaluation of needs.",
+				  	"category" : "housing"
+				},
+				{
+					"question" : "The amount of a mortgage a person can afford is affected by?",
+					"content" : [
+						"the location of the house",
+						"her or his income",
+						"the cost of insurance",
+						"his or her age"
+					],
+					"correct" : 1,
+					"tip" : "Mortgages have monetary costs.",
+					"ed" : "Location, insurance cost and age may be related to income but do not in themselves affect mortgage cost.",
+				  	"category" : "housing"
+				},
+				{
+					"question" : "Which kind of mortgage has a very large final payment?",
+					"content" : [
+						"conventional",
+						"graduated-payment",
+						"shared-appreciation",
+						"balloon"
+					],
+					"correct" : 3,
+					"tip" : "What grows larger and larger?",
+					"ed" : "Conventional, graduated, and shared mortgages all typically have regular payments that change minimally.",
+				  	"category" : "housing"
+				},
+				{
+					"question" : "The charges for settling a real estate transaction are also called ____ costs",
+					"content" : [
+						"mortgage",
+						"closing",
+						"possession",
+						"selling"
+					],
+					"correct" : 1,
+					"tip" : "Settling is similar to ending which is similar to one of these choices.",
+					"ed" : "Selling, mortgage, or possession costs are very specific while closing refers to the end of most transactions.",
+				  	"category" : "housing"
+				},
+				{
+					"question" : "The highest loan rates usually occur when borrowing from a?",
+					"content" : [
+						"bank",
+						"credit-card company",
+						"pawnshop",
+						"credit union"
+					],
+					"correct" : 2,
+					"tip" : "One of these entities doesn't do credit checks.",
+					"ed" : "Banks, credit-card companies and credit unions do credit checks on applicants in order to determine financial risk. This leads to lower loan rates.",
+				  	"category" : "credit"
+				},
+				{
+					"question" : "What is used to add funds to a bank account?",
+					"content" : [
+						"check",
+						"deposit slip",
+						"signature card",
+						"withdrawal slip"
+					],
+					"correct" : 1,
+					"tip" : "How do funds go into an account?",
+					"ed" : "A deposit slip is the document that routes external funds into an account.",
+				  	"category" : "credit"
+				},
+				{
+					"question" : "Obtaining cash from an ATM is similar to?",
+					"content" : [
+						"writing a check",
+						"making a deposit",
+						"opening a new account",
+						"earning interest on your account"
+					],
+					"correct" : 0,
+					"tip" : "What other option allows money to leave an account?",
+					"ed" : "Only writing a check makes sense for currency leaving an account.",
+				  	"category" : "credit"
+				},
+				{
+					"question" : "A service charge on your bank statement will result in?",
+					"content" : [
+						"a higher balance",
+						"a lower balance",
+						"earning more interest",
+						"more outstanding checks"
+					],
+					"correct" : 1,
+					"tip" : "A service charge incurs a penalty.",
+					"ed" : "A service charge is a negative event. This won't cause balances or interest to rise.",
+				  	"category" : "credit"
+				},
+				{
+					"question" : "A common advantage of using credit is?",
+					"content" : [
+						"less impulse buying",
+						"lower cost for items purchased",
+						"ability to obtain needed items now",
+						"lower chance of overspending"
+					],
+					"correct" : 2,
+					"tip" : "Why wait?",
+					"ed" : "Credit certainly does not lower costs or chances of overspending.",
+				  	"category" : "credit"
+
+				},
+				{
+					"question" : "A person’s regular income is referred to as?",
+					"content" : [
+						"character",
+						"capital",
+						"collateral",
+						"capacity"
+					],
+					"correct" : 3,
+					"tip" : "This word is similar to ability.",
+					"ed" : "",
+				  	"category" : "credit"
+				},
+				{
+					"question" : "To build a credit history, a person could?",
+					"content" : [
+						"establish a steady employment record",
+						"file his or her federal income taxes on time",
+						"use an ATM several times a month",
+						"request to view her or his credit file"
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "Utility companies and medical service organizations commonly offer what kind of credit?",
+					"content" : [
+						"revolving",
+						"single-payment",
+						"installment",
+						"retail"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "Using the 20-10 rule, a person earning $1,500 a month should not have monthly credit payments that exceed?",
+					"content" : [
+						"$300",
+						"$150",
+						"$20",
+						"$30"
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A credit card issued through a credit union would be an  example of a ________ card?",
+					"content" : [
+						"bank",
+						"travel and entertainment",
+						"store",
+						"proprietary"
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The grace period refers to the time?",
+					"content" : [
+						"taken to process a credit card application",
+						"for paying an account without an interest charge",
+						"allowed to notify a creditor of a billing error",
+						"used for calculating interest"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "Comparing the APR among several credit cards allows you to obtain the?",
+					"content" : [
+						"lowest grace period",
+						"lowest annual fee",
+						"lowest interest rate",
+						"least expensive method of calculating interest"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "If a billing error occurs on a credit statement, a consumer has ____ days to notify the creditor",
+					"content" : [
+					  "30",
+					  "60",
+					  "90",
+					  "120"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The most reliable source for buying a used car is usually?",
+					"content" : [
+						"a rental car company",
+						"a police auction",
+						"a car dealer",
+						"private party sales"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "_______ warranty refers to the fact that a product will do what it is designed to do?",
+					"content" : [
+						"An extended",
+						"An implied",
+						"A dealer",
+						"An unexpired manufacturer's"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The Truth-in-Lending law requires that borrowers be informed of the?",
+					"content" : [
+						"amount financed",
+						"cost of auto insurance",
+						"features of an extended warranty",
+						"reasons a person has been denied credit"
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The auto insurance coverage for damage to your vehicle as a result of an accident is called?",
+					"content" : [
+						"property damage",
+						"comprehensive",
+						"liability",
+						"collision"
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "Doctor costs for injuries to others resulting from an accident are covered by _________ liability.",
+					"content" : [
+						"medical",
+						"collision",
+						"bodily injury",
+						"comprehensive"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The lowest interest rate is usually earned on a?",
+					"content" : [
+						"money-market account",
+						"passbook account",
+						"certificate of deposit",
+						"mutual fund"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The total interest earned on $100 for two years at 10 percent (compounded annually) would be?",
+					"content" : [
+						"$2",
+						"$21",
+						"$11",
+						"$10"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "Based on the rule of 72, money earning 6 percent would take about _____ years to double.",
+					"content" : [
+						"6",
+						"8",
+						"9",
+						"12"
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "An example of a company’s debt is a",
+					"content" : [
+						"corporate bond",
+						"share of stock",
+						"mutual fund",
+						"municipal bond"
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The investment with the most risk would be",
+					"content" : [
+						"a savings account",
+						"U.S. Treasury bonds",
+						"corporate stocks",
+						"corporate bonds"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A common cause of financial difficulties is?",
+					"content" : [
+						"poor money management habits",
+						"a need for additional career training",
+						"preparing your tax return late",
+						"not having enough life insurance"
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A nonprofit organization that provides financial counseling is?",
+					"content" : [
+						"the Federal Deposit Insurance Corporation",
+						"the Consumer Credit Counseling Service",
+						"the Better Business Bureau",
+						"the National Credit Union Administration"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The purpose of a consolidation loan is to",
+					"content" : [
+						"deduct amounts owed from a person’s paycheck",
+						"pay off one credit card amount before others are paid",
+						"combine several debts into one payment",
+						"reduce the amount owed for federal income taxes"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A example of a fair debt-collection practice would be to",
+					"content" : [
+						"pretend to be a salesperson to attempt to collect a debt",
+						"threaten to take legal action to collect the money owed",
+						"call a debtor at work even if personal calls are not allowed",
+						"call a debtor at home before 8 p.m."
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "Bankruptcy refers to the process of",
+					"content" : [
+						"obtaining permission to be late with credit payments",
+						"obtaining assistance from a credit counseling service",
+						"using court action to reduce or eliminate your debts",
+						"using court action to have payments owed deducted from your paycheck"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "An example of public records would be?",
+					"content" : [
+						"a credit card statement",
+						"a telephone directory",
+						"medical records",
+						"an employment application on file with a company"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "Voter registration records are considered to be",
+					"content" : [
+						"public records",
+						"private records",
+						"company records",
+						"a database profile"
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A credit report would include a person’s",
+					"content" : [
+						"federal income tax data",
+						"balances for electric bills and other utilities",
+						"salary history",
+						"balances for installment accounts"
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The organization that provides companies with information on a person’s past use of credit is",
+					"content" : [
+						"a credit union",
+						"the Consumer Credit Counseling Service",
+						"the Fair Credit Reporting Agency",
+						"a credit bureau"
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "When using an ATM, your PIN is designed to",
+					"content" : [
+						"indicate your current balance",
+						"provide the bank access to your financial records",
+						"provide security as an authorized user",
+						"indicate your credit rating"
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+			  	{
+					"question" : "Which is commonly considered a flexible expense?",
+					"content" : [
+				  		"Rent",
+				  		"A mortgage payment",
+				  		"Home insurance",
+				  		"Entertainment"
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+			  	}
+			]
+		},
+		{
+		    "questions" : [
+				{
+					"question" : "The final phase of the budgeting process is to",
+					"content" : [
+						"set personal and financial goals",
+						"compare your budget to what you have actually spent",
+						"review financial progress",
+						"monitor current spending patterns"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "An example of a long-term goal would be",
+					"content" : [
+						"an annual vacation",
+						"saving for retirement",
+						"buying a used car",
+						"completing college within the next six months"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A clearly written financial goal would be",
+					"content" : [
+						"To save money for college for the next five years",
+						"To pay off credit card bills in 12 months",
+						"To invest in an international mutual fund for retirement",
+						"To establish an emergency fund of $4,000 in 18 months"
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "An example of a fixed expense is",
+					"content" : [
+						"clothing",
+						"auto insurance",
+						"an electric bill",
+						"educational expenses"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "_____ is commonly considered a flexible expense",
+					"content" : [
+						"Rent",
+						"A mortgage payment",
+						"Home insurance",
+						"Entertainment"
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A common flexible expense associated with apartment renting is",
+					"content" : [
+						"a security deposit",
+						"apartment insurance",
+						"electricity",
+						"rent"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A ______deposit refers to money held to cover possible damage in an apartment",
+					"content" : [
+						"cleaning",
+						"security",
+						"telephone",
+						"utilities"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A common moving-in cost for an apartment would be",
+					"content" : [
+						"a down payment",
+						"building insurance",
+						"real estate taxes",
+						"a security deposit"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A long-term goal would be to",
+					"content" : [
+						"rent an apartment",
+						"own an apartment building",
+						"move to a larger apartment",
+						"buy additional furniture"
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The agreement between a renter and a landlord is a",
+					"content" : [
+						"security deposit",
+						"mortgage",
+						"lease",
+						"deed"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A common disadvantage of buying a home is",
+					"content" : [
+						"few financial benefits",
+						"limited mobility",
+						"restrictions on decorating and having pets",
+						"conditions in the lease"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The home-buying process starts with",
+					"content" : [
+						"locating and evaluating a home",
+						"pricing the property",
+						"determining home ownership needs",
+						"obtaining an appraisal of the property"
+					],
+					"correct" : 2,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The amount of a mortgage a person can afford is affected by",
+					"content" : [
+						"the location of the house",
+						"her or his income",
+						"the cost of insurance",
+						"his or her age"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "A ______ mortgage has a very large final payment",
+					"content" : [
+						"conventional",
+						"graduated-payment",
+						"shared-appreciation",
+						"balloon"
+					],
+					"correct" : 3,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "The charges for settling a real estate transaction are also called ____ costs",
+					"content" : [
+						"mortgage",
+						"closing",
+						"possession",
+						"selling"
+					],
+					"correct" : 1,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "",
+					"content" : [
+						"",
+						"",
+						"",
+						""
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "",
+					"content" : [
+						"",
+						"",
+						"",
+						""
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				},
+				{
+					"question" : "",
+					"content" : [
+						"",
+						"",
+						"",
+						""
+					],
+					"correct" : 0,
+					"tip" : "",
+					"ed" : ""
+				}
+		    ]
+		},
+		{
+		    "questions" : [
+
+			]
+		},
+		{
+		    "questions" : [
+
+			]
+		},
+		{
+		    "questions" : [
+
+			]
+		}
+	]
+}
