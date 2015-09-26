@@ -46,14 +46,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="/#page-top">First National Bank</a>
+                <a class="navbar-brand page-scroll" href="/#page-top"><img src="img/FNBlogo2crop.png" alt="Klematis" /></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
         <li ng-class="{ active: isActive('/page1')}"><a href="/play#/page1">Want to be a Billionaire?</a></li>
-          <li class="dropdown">
+         
+          <li ng-class="{ active: isActive('/start')}"><a href="/play#/start">Financial Survivor</a></li>
+                       <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Study <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/play#/study/housing">Housing</a></li>
@@ -65,7 +67,6 @@
             
           </ul>
         </li>
-          <li ng-class="{ active: isActive('/stage1')}"><a href="/play#/stage1">Financial Survivor</a></li>
         
       </ul>
                 <ul class="nav navbar-nav navbar-right">
