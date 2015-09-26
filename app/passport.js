@@ -9,7 +9,8 @@ var bCrypt = require('bcrypt-nodejs');
 var expressSession = require('express-session');
 var fs = require('fs');
 
-var questionsFile = __dirname +'/../public/questions.json';
+
+var questionsFile = __dirname + '/../public/questions.json';
 fs.readFile(questionsFile, 'utf8', function(err, data) {
     //console.log(err);
     //console.log(data);
@@ -179,8 +180,12 @@ module.exports = function (app) {
     });
 
     app.post('/randData', isAuthenticated, function(req, res){
+	var jsonResponse = [];
+	for ( i = 0; i < 10; i++) {
+		jsonResponse.push(questions[Math.floor(Math.random()*questions.length)])
+	}
 
-	
+	res.send(JSON.stringify(jsonResponse));
 
     });
 };
