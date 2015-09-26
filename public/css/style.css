@@ -18,8 +18,10 @@ audio {
 }
 
 #top {
-	width: 960px;
-	margin: 0 auto;
+	width: auto;
+/*	margin: 0 auto;*/
+    margin-left: 200px;
+    margin-right:200px;
 }
 
 #levels {
@@ -40,14 +42,14 @@ audio {
 }
 
 #options {
-	width: 960px;
+	width: 1000px;
 	height: 70px;
 	margin: 0 auto;
 }
 
 #question-box {
 	background: #ddd;
-	width: 960px;
+	width: 1000px;
 	margin: 0 auto;
 	padding: 10px;
 	font-size: 1.5em;
@@ -70,9 +72,9 @@ audio {
 }
 
 #logo {
-	width: 480px;
+	width: 300px;
 	float: left;
-	margin-left: 240px;
+	margin-left: 320px;
 	margin-top: 60px;
 }
 
@@ -127,4 +129,34 @@ audio {
 
 .options-button:hover {
 	background-position: 0 -64px !important;
+}
+
+/*
+.navbar{
+margin-bottom: 20px;
+}
+*/
+
+
+#levels {
+    
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+#mainNav2{
+    
+}
+.navbar-fixed-top {
+    position:relative;
+  
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color:black;
+}
+
+.navbar-default .nav > li>a, .navbar-default .nav>li>a:focus {
+    color:black;
 }

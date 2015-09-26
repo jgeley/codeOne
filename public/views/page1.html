@@ -21,14 +21,7 @@
 			<div id="top">
 				<img src="img/logo.jpg" id="logo" />
 				<ul id="levels">
-					<li data-bind="css: {myactive: level() == 15}" data-amt="1000000" data-lvl="15">$1,000,000</li>
-					<li data-bind="css: {myactive: level() == 14}" data-amt="500000" data-lvl="14">$500,000</li>
-					<li data-bind="css: {myactive: level() == 13}" data-amt="250000" data-lvl="13">$250,000</li>
-					<li data-bind="css: {myactive: level() == 12}" data-amt="125000" data-lvl="12">$125,000</li>
-					<li data-bind="css: {myactive: level() == 11}" data-amt="64000" data-lvl="11">$64,000</li>
-					<li data-bind="css: {myactive: level() == 10}" data-amt="32000" data-lvl="10">$32,000</li>
-					<li data-bind="css: {myactive: level() == 9}" data-amt="16000" data-lvl="9">$16,000</li>
-					<li data-bind="css: {myactive: level() == 8}" data-amt="8000" data-lvl="8">$8,000</li>
+                    <li data-bind="css: {myactive: level() == 8}" data-amt="8000" data-lvl="8">$8,000</li>
 					<li data-bind="css: {myactive: level() == 7}" data-amt="4000" data-lvl="7">$4,000</li>
 					<li data-bind="css: {myactive: level() == 6}" data-amt="2000" data-lvl="6">$2,000</li>
 					<li data-bind="css: {myactive: level() == 5}" data-amt="1000" data-lvl="5">$1,000</li>
@@ -36,12 +29,21 @@
 					<li data-bind="css: {myactive: level() == 3}" data-amt="300" data-lvl="3">$300</li>
 					<li data-bind="css: {myactive: level() == 2}" data-amt="200" data-lvl="2">$200</li>
 					<li data-bind="css: {myactive: level() == 1}" data-amt="100" data-lvl="1">$100</li>
+					<li data-bind="css: {myactive: level() == 16}" data-amt="1000000000" data-lvl="16">$1,000,000,000</li>
+					<li data-bind="css: {myactive: level() == 15}" data-amt="50000000" data-lvl="15">$50,000,000</li>
+                    <li data-bind="css: {myactive: level() == 14}" data-amt="25000000" data-lvl="14">$25,000,000</li>
+					<li data-bind="css: {myactive: level() == 13}" data-amt="2500000" data-lvl="13">$2,500,000</li>
+					<li data-bind="css: {myactive: level() == 12}" data-amt="1250000" data-lvl="12">$1,250,000</li>
+					<li data-bind="css: {myactive: level() == 11}" data-amt="640000" data-lvl="11">$640,000</li>
+					<li data-bind="css: {myactive: level() == 10}" data-amt="32000" data-lvl="10">$32,000</li>
+					<li data-bind="css: {myactive: level() == 9}" data-amt="16000" data-lvl="9">$16,000</li>
+					
 				</ul>
 				<div class="clear"></div>
 			</div>
 			<div id="options">
 				<div id="fifty" class="options-button" data-bind="click: fifty"></div>
-				<div id="phone-friend" class="options-button" data-bind="click: fadeOutOption"></div>
+				<div id="phone-friend" class="options-button" ng-click="openPhone()"data-bind="click: fadeOutOption"></div>
 				<div id="audience" class="options-button" ng-click="open()" data-bind="click: audience"></div>
 				<div id="money">$<span data-bind="text: formatMoney()"></span></div>
 			</div>
@@ -64,15 +66,7 @@
 				</div>
 			</div>
 		</div>
-<div >
-   
-
-    <button type="button" class="btn btn-default" ng-click="open()">Open me!</button>
-    <button type="button" class="btn btn-default" ng-click="open('lg')">Large modal</button>
-    <button type="button" class="btn btn-default" ng-click="open('sm')">Small modal</button>
-    <button type="button" class="btn btn-default" ng-click="toggleAnimation()">Toggle Animation ({{ animationsEnabled }})</button>
-    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
-</div>
+<div id="levelDiv" data-bind="text: level" style="display: none;"></div>
 
 
 		<!-- Script inclusion: JQuery for effects, Knockout for MVVM, millionaire.js for application -->

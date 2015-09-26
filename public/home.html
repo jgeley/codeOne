@@ -2,10 +2,23 @@
 
 <head>
     <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.css">
+<!--    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.css">-->
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
 	<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="libs/jquery/dist/jquery.js"></script>
     <script src="libs/angular/angular.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
@@ -23,46 +36,46 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default" ng-controller="mainController">
+    <nav id="mainNav2"  class="navbar navbar-default navbar-fixed-top" ng-controller="mainController">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+     <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/#page-top">First National</a>
+         
+            </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li ng-class="{ active: isActive('/')}"><a href="#/">Home<span class="sr-only">(current)</span></a></li>
-        <li ng-class="{ active: isActive('/page1')}"><a href="#/page1">Page1</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <li ng-class="{ active: isActive('/page1')}"><a href="#/page1">Test Your Skills</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Study <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Category1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">etc</a></li>
+            
           </ul>
         </li>
+        
       </ul>
          <ul class="nav navbar-nav navbar-right">
         <li> <a href="/signout" class="text-center new-account">Logout</a></li>
       </ul>
+<!--
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
+-->
      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

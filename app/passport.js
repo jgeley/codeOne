@@ -146,7 +146,13 @@ module.exports = function (app) {
         res.redirect('/');
     });
     
-    app.get('/', isAuthenticated, function (req, res) {
+    app.get('/', function (req, res) {
+        //console.log(__dirname  + '/public/home.html');
+        console.log(__dirname);
+        res.render('main.html');
+    });
+    
+    app.get('/play', isAuthenticated, function (req, res) {
         //console.log(__dirname  + '/public/home.html');
         console.log(__dirname);
         res.render('home.html');
