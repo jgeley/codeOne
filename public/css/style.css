@@ -386,3 +386,7 @@ html{
  min-height:1000px;
     min-width:1000px;
 }
+
+.somepadding{
+  padding:20px;   
+}
