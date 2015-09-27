@@ -16,7 +16,7 @@ audio {
     background: black;
 	text-align: center;
     top:50;
-    bottom:0;
+    bottom:-100;
     left:0;
     right:0;
     position:absolute;

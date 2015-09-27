@@ -10,11 +10,7 @@
         //var sortable = Sortable.create(el);
 
         $scope.items = [
-            {
-                'text': 'housing',
-                'value': 0,
-                'graphId': "housinggraph"
-        }, {
+           {
                 'text': 'utilities',
                 'value': 1,
                 'graphId': "utilitiesgraph"
@@ -30,10 +26,6 @@
                 'text': 'medical',
                 'value': 4,
                 'graphId': "medicalgraph"
-        }, {
-                'text': 'children',
-                'value': 5,
-                'graphId': "childrengraph"
         }, {
                 'text': 'personal',
                 'value': 5,
@@ -45,42 +37,14 @@
         }];
         $scope.salary = "0";
         $scope.salaryLeft = $scope.salary;
-        $scope.budget = ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0'];
-        $scope.average = ['45', '6', '32', '12', '19`', '20', '45', '32', '54', '56'];
-        $scope.order = ['housing', 'utilities', 'food', 'car', 'medical', 'children', 'personal', 'loan'];
+        $scope.budget = ['0', '0', '0', '0', '0', '0', '0'];
+        $scope.average = ['14000', '3500', '9500', '9000', '3000', '2500', '3600'];
+        $scope.order = ['housing', 'utilities', 'food', 'car', 'medical','personal', 'loan'];
         $scope.items2 = [
             {
                 'text': 'housing',
                 'value': 0,
                 'graphId': "housinggraph"
-        }, {
-                'text': 'utilities',
-                'value': 1,
-                'graphId': "utilitiesgraph"
-        }, {
-                'text': 'food',
-                'value': 2,
-                'graphId': "foodgraph"
-        }, {
-                'text': 'car',
-                'value': 3,
-                'graphId': "cargraph"
-        }, {
-                'text': 'medical',
-                'value': 4,
-                'graphId': "medicalgraph"
-        }, {
-                'text': 'children',
-                'value': 5,
-                'graphId': "childrengraph"
-        }, {
-                'text': 'personal',
-                'value': 6,
-                'graphId': "personalgraph"
-        }, {
-                'text': 'loan',
-                'value': 7,
-                'graphId': "loangraph"
         }];
         $scope.foo = ['foo 1', 'foo 2'];
         $scope.bar = ['bar 1', 'bar 2'];
@@ -151,11 +115,11 @@
 
         }, true);
 
-        $scope.$watch("items2", function (newValue, oldValue) {
+        $scope.$watch("items2",  function (newValue, oldValue, $compile) {
             $scope.salaryLeft = $scope.salary;
 
             //            $scope.$compile('sdfasd');
-            for (var j = 0; j < $scope.order.length; j++) {
+            for (var j = $scope.order.length-1; j > -1; j--) {
                 var found = false;
                 for (var i = 0; i < $scope.items2.length; i++) {
                     if ($scope.items2[i].text == $scope.order[j]) {
@@ -168,7 +132,7 @@
                 if (found) {
                     $scope.graphData = ([[$scope.budget[j], $scope.average[j]]]).concat($scope.graphData);
                     $scope.salaryLeft -= $scope.budget[j];
-                    console.log($scope.order[j]);
+                console.log($scope.order[j]);
                     document.getElementById($scope.order[j]).removeAttribute("hidden");
 
                 } else {
@@ -178,23 +142,15 @@
             }
 
 
-            $scope.graphData.reverse();
-            $scope.salaryLeft = $scope.salary;
-            $scope.graphData = [];
-            for (var i = 0; i < $scope.items2.length; i++) {
-
-                $scope.graphData = ([[$scope.budget[$scope.items2[i].value], $scope.average[$scope.items2[i].value]]]).concat($scope.graphData);
-                $scope.salaryLeft -= $scope.budget[$scope.items2[i].value];
-            }
            
 
-        },true);
+        }, true);
 
-        $scope.$watch("salary", function (newValue, oldValue) {
+        $scope.$watch("salary", function (newValue, oldValue, $compile) {
             $scope.salaryLeft = $scope.salary;
 
             //            $scope.$compile('sdfasd');
-            for (var j = 0; j < $scope.order.length; j++) {
+            for (var j = $scope.order.length-1; j > -1; j--) {
                 var found = false;
                 for (var i = 0; i < $scope.items2.length; i++) {
                     if ($scope.items2[i].text == $scope.order[j]) {
@@ -207,7 +163,7 @@
                 if (found) {
                     $scope.graphData = ([[$scope.budget[j], $scope.average[j]]]).concat($scope.graphData);
                     $scope.salaryLeft -= $scope.budget[j];
-                    console.log('hidden is false');
+                console.log($scope.order[j]);
                     document.getElementById($scope.order[j]).removeAttribute("hidden");
 
                 } else {
@@ -217,8 +173,8 @@
             }
 
 
-          
+           
 
-        });
+        }, true);
 
     };
