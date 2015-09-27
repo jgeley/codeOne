@@ -177,6 +177,7 @@ margin-bottom: 0px;
     padding-left: 10%;
     padding-right: 10%;
     height:150%;
+    padding-top:5%;
     min-height:100%;
     position:relative;
   background: url(../img/business.jpg) no-repeat center center fixed; 
@@ -276,6 +277,7 @@ bottom: 45%;
 .column-right{ float: right; width: 47%; margin-left:10px;height:100%}
 
     .box{
+        padding:10px;
         
         border-color: black;
         color:black;
@@ -286,18 +288,21 @@ bottom: 45%;
         border-style: hidden;
     border-width: 5px;
         height:80%;
+        background:white;
     }
 .box2{
-        
+         padding:10px;
         border-color: black;
+        right:0px;
         color:black;
-        width: 60%;    
+        width: 64%;    
         float:left;
         margin:1%;
         border-radius:5px;
         border-style:hidden;
     border-width: 5px;
         height:80%;
+    background:white;
     }
     .text{
         color:black;
@@ -353,4 +358,15 @@ body > div > div > div:nth-child(2) > div > ul{
 
 svg{
     padding-top:0px;   
+}
+#budgetPageDiv{
+     
+    height:auto;
+    min-height:100%;
+    position:relative;
+  background: url(../img/business.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

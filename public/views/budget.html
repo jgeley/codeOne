@@ -39,14 +39,9 @@
         </div>
     </div>
 -->
+<div id="budgetPageDiv">
 
 
-    <div>
-        <label>Enter Salary : $
-            <input type="text" ng-model="salary">
-        </label>
-        <br>
-    </div>
     <div class="box list-group">
         <div class="text">I don't want
             <br/>
@@ -65,16 +60,24 @@
         </div>
     </div>
     <div class="box2">
-        <div class="text">
+        <div  style="text-align:left"class="text" >
+            <div>
+        <label>Your Salary : $
+            <input type="text" ng-model="salary">
+        </label>
+        <br>
+    </div>
+            <div  style="text-align:left"class="text">
             Your Budget: Salary Left: $
             <input readonly="readonly" type="text" ng-model="salaryLeft">
             <br/>
+                </div>
 <!--            <table-directive categories="categories" graphData="graphData" colors="colors" items="items" items2="items2" average="average"></table-directive>-->
             <table class=" table table-striped" style="width:100%" id="budgetTable">
                 <tr>
                     <th>Item</th>
                     <th>What are you willing to spend?</th>
-                    <th>Average</th>
+                    <th>National Average</th>
                 </tr>
 <!--
                 <tr ng-repeat="item in items2">
@@ -89,17 +92,19 @@
                 </tr>
 -->
                 <tr id="housing" >
-                    <td>Housing</td>
+                    <td>Housing<br/><label>National Average: 
+                            <input readonly="readonly" type="text" ng-model="average[0]"> </label></td>
                     <td>
                         <label>$
-                            <input type="text" ng-model="budget[0]"> </label>
+                            <input  type="text" ng-model="budget[0]"> </label>
                     </td>
                     <td>
                         <dgraph categories="categories" dollars="graphData[0]" colors="colors" barid="housingg" id="housingg"></dgraph>
                      </td>
                 </tr>
                 <tr id="utilities">
-                    <td>Utilities</td>
+                    <td>Utilities<br/><label>National Average: 
+                            <input readonly="readonly" type="text" ng-model="average[1]"> </label></td>
                     <td>
                         <label>$
                             <input type="text" ng-model="budget[1]"> </label>
@@ -109,7 +114,8 @@
                        </td>
                 </tr>
                 <tr id="food">
-                    <td>Food and Entertainment</td>
+                    <td>Food and Entertainment<br/><label>National Average: 
+                            <input readonly="readonly" type="text" ng-model="average[2]"> </label></td>
                     <td>
                         <label>$
                             <input type="text" ng-model="budget[2]"> </label>
@@ -119,7 +125,8 @@
                         </td>
                 </tr>
                 <tr id="car">
-                    <td>Car and Transportation</td>
+                    <td>Car and Transportation<br/><label>National Average: 
+                            <input readonly="readonly" type="text" ng-model="average[3]"> </label></td>
                     <td>
                         <label>$
                             <input type="text" ng-model="budget[3]"> </label>
@@ -129,7 +136,8 @@
                        </td>
                 </tr>
                 <tr id="medical">
-                    <td>Medical Health</td>
+                    <td>Medical Health<br/><label>National Average: 
+                            <input readonly="readonly" type="text" ng-model="average[4]"> </label></td>
                     <td>
                         <label>$
                             <input type="text" ng-model="budget[4]" </label>
@@ -140,7 +148,8 @@
                 </tr>
                 
                 <tr id="personal">
-                    <td>Personal Expenses</td>
+                    <td>Personal Expenses<br/><label>National Average: 
+                            <input readonly="readonly" type="text" ng-model="average[5]"> </label></td>
                     <td>
                         <label>$
                             <input type="text" ng-model="budget[5]"> </label>
@@ -150,7 +159,8 @@
                         </td>
                 </tr>
                 <tr id="loan">
-                    <td>Loan Payments</td>
+                    <td>Loan Payments<br/><label>National Average: 
+                            <input readonly="readonly" type="text" ng-model="average[6]"> </label></td>
                     <td>
                         <label>$
                             <input type="text" ng-model="budget[6]"> </label>
@@ -161,6 +171,7 @@
                 </tr>
             </table>
         </div>
+    </div>
     </div>
 </div>
 
