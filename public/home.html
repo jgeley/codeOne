@@ -15,6 +15,10 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link href="//rubaxa.github.io/Ply/ply.css" rel="stylesheet" type="text/css"/>
+	<link href="//fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css"/>
+
+	<link href="css/app.css" rel="stylesheet" type="text/css"/>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
@@ -27,7 +31,7 @@
      <script src="libs/stackedMap.js"></script>
      <script src="libs/modal.js"></script>
     <script src="js/accordion.js"></script>
-
+<script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
     <script src="js/carousel.js"></script>
     <script src="js/app.module.js"></script>
     <script src="js/app.modal.js"></script>
@@ -39,6 +43,20 @@
     <script src="js/end.controller.js"></script>
     <script src="js/start.controller.js"></script>
      <script src="js/accordion.directive.js"></script>
+     <script src="js/graph.directive.js"></script>
+    <script src="js/budget.controller.js"></script>
+    
+    	<script src="//yandex.st/highlightjs/7.5/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+    <style>
+	#xaxis .domain {
+		fill:none;
+		stroke:#000;
+	}
+	#xaxis text, #yaxis text {
+		font-size: 12px;
+	}
+	</style>
 </head>
 
 <body>
@@ -77,6 +95,7 @@
         
       </ul>
          <ul class="nav navbar-nav navbar-right">
+              <li ng-class="{ active: isActive('/budget')}"><a href="#/budget"> My Budget</a></li>
         <li> <a href="/signout" class="text-center new-account">Logout</a></li>
       </ul>
 <!--
@@ -93,6 +112,58 @@
 </nav>
    
     <div ui-view="mainView"></div>
+    <script src="js/Sortable.js"></script>
+	<script src="//rubaxa.github.io/Ply/Ply.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="js/ng-sortable.js"></script>
+
+<!--	<script src="js/app.js"></script>-->
+
+
+
+	<!-- highlight.js -->
+	<style>
+		/* Tomorrow Theme */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+		/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+		.tomorrow-comment, pre .comment, pre .title {
+		  color: #8e908c;
+		}
+		.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+		  color: #c82829;
+		}
+		.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
+		  color: #f5871f;
+		}
+		.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
+		  color: #eab700;
+		}
+		.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+		  color: #718c00;
+		}
+		.tomorrow-aqua, pre .css .hexcolor {
+		  color: #3e999f;
+		}
+		.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+		  color: #4271ae;
+		}
+		.tomorrow-purple, pre .keyword, pre .javascript .function {
+		  color: #8959a8;
+		}
+		pre {
+			border: 0;
+			background-color: #fff;
+		}
+		pre code {
+		  display: block;
+		  color: #4d4d4c;
+		  font-size: 15px;
+		  font-family: Menlo, Monaco, Consolas, monospace;
+		  line-height: 1.5;
+		  padding: 30px;
+		}
+	</style>
 </body>
 
 </html>

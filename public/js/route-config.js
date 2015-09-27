@@ -99,6 +99,13 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
       },
       activetab: 'start'
     }
+    ).state('budget', {
+      url: "/budget",
+       views: {
+        "mainView": { templateUrl: "views/budget.html" }
+      },
+      activetab: 'budget'
+    }
     )
 //      .state('budget', {
 //      url: "/study/budget",
