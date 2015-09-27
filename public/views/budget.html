@@ -1,0 +1,177 @@
+<div ng-controller="budgetController">
+    <!--
+    <ul id="items">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ul>
+-->
+
+
+
+    <!--
+    <ul ng-sortable class="column column-left">
+        <li ng-repeat="item in items">{{item}}</li>
+    </ul>
+
+    <ul ng-sortable="{ group: 'foobar' }" class="column column-right">
+        <li ng-repeat="item in foo">{{item}}</li>
+    </ul>
+
+    <ul ng-sortable="barConfig">
+        <li ng-repeat="item in bar">{{item}}</li>
+    </ul>
+-->
+
+    <!--
+    <div class="jumbotron  column column-left">
+      <div class="container">
+          <ul ng-sortable="{ group: 'foobar' }" class="column column-right">
+        <li ng-repeat="item in foo">{<img src="img/face-02.jpg"/></li>
+    </ul>
+        </div>
+    </div>
+    <div class="jumbotron  column column-right">
+      <div class="container">
+          <ul ng-sortable="barConfig">
+        <li ng-repeat="item in bar">{{item}}</li>
+    </ul>
+        </div>
+    </div>
+-->
+
+
+    <div>
+        <label>Enter Salary : $
+            <input type="text" ng-model="salary">
+        </label>
+        <br>
+    </div>
+    <div class="box list-group">
+        <div class="text">I don't want
+            <br/>
+            <ul ng-sortable="{group: 'sortable'}">
+                <li class="list-group-item" ng-repeat="item in items">{{item.text}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box list-group">
+        <div class="text">
+            I want
+            <br/>
+            <ul ng-sortable="{group: 'sortable'}">
+                <li class="list-group-item" ng-repeat="item in items2">{{item.text}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="text">
+            Your Budget: Salary Left: $
+            <input readonly="readonly" type="text" ng-model="salaryLeft">
+            <br/>
+<!--            <table-directive categories="categories" graphData="graphData" colors="colors" items="items" items2="items2" average="average"></table-directive>-->
+            <table class=" table table-striped" style="width:100%" id="budgetTable">
+                <tr>
+                    <th>Item</th>
+                    <th>What are you willing to spend?</th>
+                    <th>Average</th>
+                </tr>
+<!--
+                <tr ng-repeat="item in items2">
+                    <td>{{item.text}}</td>
+                    <td>
+                        <label>$
+                            <input type="text" ng-model="budget[item.value]"> </label>
+                    </td>
+                    <td>
+                        <dgraph categories="categories" dollars="graphData[$index]" colors="colors" barid="item.graphId" id="item.graphId"></dgraph>
+                        {{graphData}}</td>
+                </tr>
+-->
+                <tr id="housing" >
+                    <td>Housing</td>
+                    <td>
+                        <label>$
+                            <input type="text" ng-model="budget[0]"> </label>
+                    </td>
+                    <td>
+                        <dgraph categories="categories" dollars="graphData[0]" colors="colors" barid="housingg" id="housingg"></dgraph>
+                     </td>
+                </tr>
+                <tr id="utilities">
+                    <td>Utilities</td>
+                    <td>
+                        <label>$
+                            <input type="text" ng-model="budget[1]"> </label>
+                    </td>
+                    <td>
+                        <dgraph categories="categories" dollars="graphData[1]" colors="colors" barid="utilitiesg" id="utilitiesg"></dgraph>
+                       </td>
+                </tr>
+                <tr id="food">
+                    <td>Food and Entertainment</td>
+                    <td>
+                        <label>$
+                            <input type="text" ng-model="budget[2]"> </label>
+                    </td>
+                    <td>
+                        <dgraph categories="categories" dollars="graphData[2]" colors="colors" barid="foodg" id="foodg"></dgraph>
+                        </td>
+                </tr>
+                <tr id="car">
+                    <td>Car and Transportation</td>
+                    <td>
+                        <label>$
+                            <input type="text" ng-model="budget[3]"> </label>
+                    </td>
+                    <td>
+                        <dgraph categories="categories" dollars="graphData[3]" colors="colors" barid="carg" id="carg"></dgraph>
+                       </td>
+                </tr>
+                <tr id="medical">
+                    <td>Medical Health</td>
+                    <td>
+                        <label>$
+                            <input type="text" ng-model="budget[4]" </label>
+                    </td>
+                    <td>
+                        <dgraph categories="categories" dollars="graphData[4]" colors="colors" barid="medicalg" id="medicalg"></dgraph>
+                        </td>
+                </tr>
+                
+                <tr id="children">
+                    <td>Children</td>
+                    <td>
+                        <label>$
+                            <input type="text" ng-model="budget[5]" </label>
+                    </td>
+                    <td>
+                        <dgraph categories="categories" dollars="graphData[5]" colors="colors" barid="childreng" id="childreng"></dgraph>
+                        </td>
+                </tr>
+                <tr id="personal">
+                    <td>Personal Expenses</td>
+                    <td>
+                        <label>$
+                            <input type="text" ng-model="budget[6]"> </label>
+                    </td>
+                    <td>
+                        <dgraph categories="categories" dollars="graphData[6]" colors="colors" barid="personalg" id="personalg"></dgraph>
+                        </td>
+                </tr>
+                <tr id="loan">
+                    <td>Loan Payments</td>
+                    <td>
+                        <label>$
+                            <input type="text" ng-model="budget[7]"> </label>
+                    </td>
+                    <td>
+                        <dgraph categories="categories" dollars="graphData[7]" colors="colors" barid="loang" id="loang"></dgraph>
+                        </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script></script>
