@@ -7,7 +7,8 @@
     function survivorController($scope, $location,$state,$rootScope) {
         
         
-        $scope.score = 0;
+        $scope.score = $rootScope.score;
+        alert($scope.score);
         $scope.everything = $rootScope.output;
     
     };
