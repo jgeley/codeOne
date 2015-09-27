@@ -25,8 +25,8 @@ var grid = d3.range(25).map(function(i){
 		});
 
 		var xscale = d3.scale.linear()
-						.domain([0,250])
-						.range([0,722]);
+						.domain([0,150])
+						.range([0,2]);
 
 		var yscale = d3.scale.linear()
 						.domain([0,scope.categories.length])
