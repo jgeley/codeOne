@@ -248,7 +248,7 @@
             var modalInstance = $modal.open({
                 animation: $scope.animationsEnabled,
                 templateUrl: 'survivorModal.html',
-                controller: 'ModalInstanceCtrl',
+                controller: 'survavialInstanceCtrl',
                 size: 'lg',
                 resolve: {
                     items: function () {

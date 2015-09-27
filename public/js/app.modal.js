@@ -197,9 +197,9 @@ angular.module('app').controller('ModalDemoCtrl', function ($scope, $modal, $log
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
-angular.module('app').controller('ModalInstanceCtrl', function ($scope, $modalInstance, displayStuff,solution, items, $http, $stateParams, $state) {
-    $scope.solution = solution;
-    $scope.displayStuff = displayStuff;
+angular.module('app').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items, $http, $stateParams, $state) {
+//    $scope.solution = solution;
+//    $scope.displayStuff = displayStuff;
     $http.get("/tmpData")
         .success(function (response) {
             console.log("Second");
@@ -215,7 +215,6 @@ angular.module('app').controller('ModalInstanceCtrl', function ($scope, $modalIn
             }
             //$scope.hint = "hint goes here";
         });
-    $scope.solution = solution;
     $scope.goToAnswer = function () {
         $modalInstance.close();
         $stateParams.category = $scope.category;
