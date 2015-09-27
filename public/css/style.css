@@ -381,3 +381,8 @@ svg{
     padding-bottom: 10px;
     
 }
+
+html{
+ min-height:1000px;
+    min-width:1000px;
+}

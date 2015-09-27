@@ -2,9 +2,9 @@
         .module('app')
         .controller('survivorController', survivorController);
 
-    survivorController.$inject = ['$scope', '$location', '$state', '$rootScope'];
+    survivorController.$inject = ['$scope', '$location', '$state', '$rootScope', '$modal'];
 
-    function survivorController($scope, $location, $state, $rootScope) {
+    function survivorController($scope, $location, $state, $rootScope, $modal,$timeout) {
 
         $scope.score = 0;
 
@@ -20,7 +20,7 @@
             $scope.solutions[1][2] = 1;
             $scope.solutions[2][0] = "Stash the card away for emergency use later in case you have no cash on hand";
             $scope.solutions[2][1] = "This is the worst option because the FDIC does not necessarily cover the costs of these cards if the bank/business that supplies them goes under. Secondly, if they are stolen, the money is simply gone. You would be better off just using cash again.";
-             $scope.solutions[2][2] = 1;
+            $scope.solutions[2][2] = 1;
             $scope.correctSolution = 0;
             document.getElementById("stage1").style.background = 'url(../img/survivorBackgrounds/college.jpg) no-repeat center center fixed';
         }
@@ -43,7 +43,7 @@
             document.getElementById("stage1").style.background = 'url(../img/survivorBackgrounds/college2.jpg) no-repeat center center fixed';
         }
         if ($state.includes('stage3')) {
-             if ($rootScope.output === undefined || $rootScope.output === null) {
+            if ($rootScope.output === undefined || $rootScope.output === null) {
                 $rootScope.output = []
             }
             $scope.problem = "Your are in your junior year of college and struggling hardcore financially. Your student loans have started running out and you are holding more and more money on the credit card. You have very limited options but the ones you do have are pretty bleak. You need to choose the best option from a overall bad situation. What is your best bad option?";
@@ -61,7 +61,7 @@
             document.getElementById("stage1").style.background = 'url(../img/survivorBackgrounds/land1.jpg) no-repeat center center fixed';
         }
         if ($state.includes('stage4')) {
-             if ($rootScope.output === undefined || $rootScope.output === null) {
+            if ($rootScope.output === undefined || $rootScope.output === null) {
                 $rootScope.output = []
             }
             $scope.problem = "You just graduated college and have found a good paying full time job. You really like your job and you can not see yourself leaving the job anytime in the foreseeable future. You are super excited that you no longer have to worry about just scraping by on college funds. Yet you remember how awful it was to have to do so and you vow to plan your future so that you are never that low on cash again. In order to pull this off you need to choose the best plan you can. Out of these options, what will you do?";
@@ -79,7 +79,7 @@
             document.getElementById("stage1").style.background = 'url(../img/survivorBackgrounds/land2.jpg) no-repeat center center fixed';
         }
         if ($state.includes('stage5')) {
-             if ($rootScope.output === undefined || $rootScope.output === null) {
+            if ($rootScope.output === undefined || $rootScope.output === null) {
                 $rootScope.output = []
             }
             $scope.problem = "You have just graduated college and started a career working for the FBI. As part of your employment process a credit background check was completed over your history. You are told that to continue working in this career field you must maintain an excellent credit record. You have a close friend who is also starting their own career. The job requires a long commute though and he or she does not have a vehicle. He or she begs you to cosign with them for an auto loan since they are unable to get a loan on his or her own. You truly want to help your friend but you also know in the back of your mind that this person has been financially irresponsible a few times in the past. Which of the following options should you choose?";
@@ -97,7 +97,7 @@
             document.getElementById("stage1").style.background = 'url(../img/survivorBackgrounds/land3.jpg) no-repeat center center fixed';
         }
         if ($state.includes('stage6')) {
-             if ($rootScope.output === undefined || $rootScope.output === null) {
+            if ($rootScope.output === undefined || $rootScope.output === null) {
                 $rootScope.output = []
             }
             $scope.problem = "You are in your early 30's and have had a successful career. You are getting ready to purchase your first home. You always pay off your credit cards on time and as such are under the impression that you have good credit. Every now and then you notice a strange charge in your online bank statements or a letter stating you have been approved for a new credit line. When you go to the bank to apply for a home loan you are startled to discover that you are rejected for a low interest loan due to poor credit. Of the following choices which should you choose?";
@@ -114,8 +114,8 @@
             $scope.correctSolution = 0;
             document.getElementById("stage1").style.background = 'url(../img/survivorBackgrounds/land4.jpg) no-repeat center center fixed';
         }
-         if ($state.includes('stage7')) {
-             if ($rootScope.output === undefined || $rootScope.output === null) {
+        if ($state.includes('stage7')) {
+            if ($rootScope.output === undefined || $rootScope.output === null) {
                 $rootScope.output = []
             }
             $scope.problem = "You are in your mid forties and your kid just graduated college. He needed a place to stay while he finds a job. You have not seen him much for the past four years and are extremely excited to have your kid in the house again. The problem is their job search is slowing down and they are settling in with living with you. Recently they started needing money to stay afloat with their car and student loans. You feel very secure with your income and can easily support yourself and him. What do you do?";
@@ -123,17 +123,17 @@
             $scope.solutions[0][0] = "Force him out of the house";
             $scope.solutions[0][1] = "This is not a very good option, you could end up ruining your relationship with your kid. It seems rather pointless to bring him in just to kick him out later when you are sick of him and it does not help him move on with his life.";
             $scope.solutions[0][2] = 1;
-             $scope.solutions[1][0] = "Front his expenses";
+            $scope.solutions[1][0] = "Front his expenses";
             $scope.solutions[1][1] = "This is the worst option because it does not only hurt you and your expenses, it gives him positive feedback that not looking for a job and living off your parents is alright. You need to concentrate on making the next 10-15 years count toward your retirement and blowing it on your son that could be independent is not smart.";
             $scope.solutions[1][2] = 1;
-             $scope.solutions[2][0] = "Pay only for the expense of him living in your house";
+            $scope.solutions[2][0] = "Pay only for the expense of him living in your house";
             $scope.solutions[2][1] = "This is the best option because it requires him to realize that he is slowing down his own life by living off you. You should still support him with shelter and food but he should be responsible for everything else that he would need if he was living alone.";
             $scope.solutions[2][2] = 1;
-             $scope.correctSolution = 2;
+            $scope.correctSolution = 2;
             document.getElementById("stage1").style.background = 'url(../img/survivorBackgrounds/land5.jpg) no-repeat center center fixed';
         }
-         if ($state.includes('stage8')) {
-             if ($rootScope.output === undefined || $rootScope.output === null) {
+        if ($state.includes('stage8')) {
+            if ($rootScope.output === undefined || $rootScope.output === null) {
                 $rootScope.output = []
             }
             $scope.problem = "You are in your late forties and your wife just got diagnosed with breast cancer. You are desperate to cure her, as any husband would most undoubtedly be. You have insurance but they will not cover the entire cost. The rest is up to you and you do not have nearly enough money to pay off the health care bills. What is your best option?";
@@ -141,17 +141,17 @@
             $scope.solutions[0][0] = "Get massive bank loans";
             $scope.solutions[0][1] = "This is the best option. It does stink to have the interest on the bank loans but this option is better than the alternatives because this option loses you the least amount of money in the long run.";
             $scope.solutions[0][2] = 1;
-             $scope.solutions[1][0] = "Cash out part of your retirement account early";
+            $scope.solutions[1][0] = "Cash out part of your retirement account early";
             $scope.solutions[1][1] = "This not a good option at all... If you withdraw your retirement before you reach 59.5 are considered premature distributions. They may be subject to an additional 10% tax along with the fact that this may bump you into the next tax bracket, taxing you even further.";
             $scope.solutions[1][2] = 1;
-             $scope.solutions[2][0] = "Leave your wife untreated and hope she gets better";
+            $scope.solutions[2][0] = "Leave your wife untreated and hope she gets better";
             $scope.solutions[2][1] = "Obviously a bad option, if your wife dies you will never forgive yourself for not at least trying.";
             $scope.solutions[2][2] = 1;
-             $scope.correctSolution = 0;
+            $scope.correctSolution = 0;
             document.getElementById("stage1").style.background = 'url(../img/survivorBackgrounds/land6.jpg) no-repeat center center fixed';
         }
-         if ($state.includes('stage9')) {
-             if ($rootScope.output === undefined || $rootScope.output === null) {
+        if ($state.includes('stage9')) {
+            if ($rootScope.output === undefined || $rootScope.output === null) {
                 $rootScope.output = []
             }
             $scope.problem = "You just turned 55 and now it is time for your to retire! Congratulations! Only one problem, they are asking what you would like to do with your pension. Your not entirely sure and the decision is irrevocable so there is not going back. What should you do?";
@@ -159,13 +159,13 @@
             $scope.solutions[0][0] = "Take it out as a single-life pension under yourself";
             $scope.solutions[0][1] = "The problem with this one is that if you die, your spouse is left living without your pension.";
             $scope.solutions[0][2] = 1;
-             $scope.solutions[1][0] = "Spend some money and consult a good financial adviser";
+            $scope.solutions[1][0] = "Spend some money and consult a good financial adviser";
             $scope.solutions[1][1] = "This is the best option. The reasoning is that it is completely dependent on how your or your spouses health and finances are. It is best to talk to a financial adviser before making a decision on this.";
             $scope.solutions[1][2] = 1;
-             $scope.solutions[2][0] = "Take it out as a joint-life pension for you and your spouse";
+            $scope.solutions[2][0] = "Take it out as a joint-life pension for you and your spouse";
             $scope.solutions[2][1] = "The problem with this option is that you will not bring in as much money with the pension split between you two.";
             $scope.solutions[2][2] = 1;
-             $scope.correctSolution = 1;
+            $scope.correctSolution = 1;
             document.getElementById("stage1").style.background = 'url(../img/survivorBackgrounds/land7.jpg) no-repeat center center fixed';
         }
 
@@ -184,62 +184,130 @@
                 //console.log('adding');
                 //console.log(nextOut);
                 $rootScope.output.push(nextOut);
+                $scope.displayStuff = "Correct!";
             } else {
                 //alert($scope.solutions[0][0]);
                 var nextOut = [$scope.problem, $scope.solutions[num][0], $scope.solutions[num][1], $scope.solutions[$scope.correctSolution][0], $scope.solutions[$scope.correctSolution][1]];
-                 //console.log('adding');
+                //console.log('adding');
                 //console.log(nextOut);
+                $scope.displayStuff = "Sorry that is not correct.";
                 $rootScope.output.push(nextOut);
             }
-        
+
             if ($state.includes('stage1')) {
-                $state.go('stage2', {}, {
-                    reload: false
-                });
+                //                $state.go('stage2', {}, {
+                //                    reload: false
+                //                });
                 $rootScope.score = 0;
             }
-             if ($state.includes('stage2')) {
-                $state.go('stage3', {}, {
-                    reload: false
-                });
+            if ($state.includes('stage2')) {
+                //                $state.go('stage3', {}, {
+                //                    reload: false
+                //                });
             }
-             if ($state.includes('stage3')) {
-                $state.go('stage4', {}, {
-                    reload: false
-                });
+            if ($state.includes('stage3')) {
+                //                $state.go('stage4', {}, {
+                //                    reload: false
+                //                });
             }
-             if ($state.includes('stage4')) {
-                $state.go('stage5', {}, {
-                    reload: true
-                });
+            if ($state.includes('stage4')) {
+                //                $state.go('stage5', {}, {
+                //                    reload: true
+                //                });
             }
-             if ($state.includes('stage5')) {
-                $state.go('stage6', {}, {
-                    reload: true
-                });
+            if ($state.includes('stage5')) {
+                //                $state.go('stage6', {}, {
+                //                    reload: true
+                //                });
             }
             if ($state.includes('stage6')) {
-                $state.go('stage7', {}, {
-                    reload: true
-                });
+                //                $state.go('stage7', {}, {
+                //                    reload: true
+                //                });
             }
             if ($state.includes('stage7')) {
-                $state.go('stage8', {}, {
-                    reload: true
-                });
+                //                $state.go('stage8', {}, {
+                //                    reload: true
+                //                });
             }
             if ($state.includes('stage8')) {
-                $state.go('stage9', {}, {
-                    reload: true
-                });
+                //                $state.go('stage9', {}, {
+                //                    reload: true
+                //                });
             }
-             if ($state.includes('stage9')) {
-                $state.go('end', {}, {
-                    reload: true
-                });
+            if ($state.includes('stage9')) {
+                //                $state.go('end', {}, {
+                //                    reload: true
+                //                });
             }
             $rootScope.score += $scope.solutions[num][2];
-           
-            
+
+            var modalInstance = $modal.open({
+                animation: $scope.animationsEnabled,
+                templateUrl: 'survivorModal.html',
+                controller: 'ModalInstanceCtrl',
+                size: 'lg',
+                resolve: {
+                    items: function () {
+                        
+                        return $scope.items;
+                    },
+                    solution: function() {
+                     return $scope.solutions[num][1];   
+                    },
+                    displayStuff: function(){
+                      return $scope.displayStuff;   
+                }
+                }
+            });
+            modalInstance.result.then(function () {
+                if ($state.includes('stage1')) {
+                                $state.go('stage2', {}, {
+                                    reload: false
+                                });
+                $rootScope.score = 0;
+            }
+            if ($state.includes('stage2')) {
+                                $state.go('stage3', {}, {
+                                    reload: false
+                                });
+            }
+            if ($state.includes('stage3')) {
+                                $state.go('stage4', {}, {
+                                    reload: false
+                                });
+            }
+            if ($state.includes('stage4')) {
+                                $state.go('stage5', {}, {
+                                    reload: true
+                                });
+            }
+            if ($state.includes('stage5')) {
+                                $state.go('stage6', {}, {
+                                    reload: true
+                                });
+            }
+            if ($state.includes('stage6')) {
+                //                $state.go('stage7', {}, {
+                //                    reload: true
+                //                });
+            }
+            if ($state.includes('stage7')) {
+                                $state.go('stage8', {}, {
+                                    reload: true
+                                });
+            }
+            if ($state.includes('stage8')) {
+                                $state.go('stage9', {}, {
+                                    reload: true
+                                });
+            }
+            if ($state.includes('stage9')) {
+                                $state.go('end', {}, {
+                                    reload: true
+                                });
+            }
+            });
+
         };
     }

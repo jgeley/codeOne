@@ -6,7 +6,7 @@ angular.module('app').controller('ModalDemoCtrl', function ($scope, $modal, $log
 
         if ($scope.questions[document.getElementById('levelDiv').innerHTML - 1].correct != num) {
             console.log($scope.questions);
-           // alert($scope.questions[document.getElementById('levelDiv').innerHTML - 1].correct + " != " + num);
+            // alert($scope.questions[document.getElementById('levelDiv').innerHTML - 1].correct + " != " + num);
             var modalInstance = $modal.open({
 
                 animation: $scope.animationsEnabled,
@@ -197,20 +197,25 @@ angular.module('app').controller('ModalDemoCtrl', function ($scope, $modal, $log
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
-angular.module('app').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items, $http, $stateParams, $state) {
+angular.module('app').controller('ModalInstanceCtrl', function ($scope, $modalInstance, displayStuff,solution, items, $http, $stateParams, $state) {
+    $scope.solution = solution;
+    $scope.displayStuff = displayStuff;
     $http.get("/tmpData")
         .success(function (response) {
             console.log("Second");
             $scope.questions = response;
-            $scope.rightAnswer = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].content[$scope.questions[document.getElementById('levelDiv').innerHTML - 1].correct];
-            $scope.hint = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].tip;
-            $scope.category = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].category;
-            console.log('category ' );
-       // console.log($scope.questions[document.getElementById('levelDiv').innerHTML - 1].id);
-            $scope.id = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].id;
+            var doc = document.getElementById('levelDiv');
+            if (typeof doc != 'undefined' && doc != null) {
+                $scope.rightAnswer = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].content[$scope.questions[document.getElementById('levelDiv').innerHTML - 1].correct];
+                $scope.hint = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].tip;
+                $scope.category = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].category;
+                console.log('category ');
+                // console.log($scope.questions[document.getElementById('levelDiv').innerHTML - 1].id);
+                $scope.id = $scope.questions[document.getElementById('levelDiv').innerHTML - 1].id;
+            }
             //$scope.hint = "hint goes here";
         });
-
+    $scope.solution = solution;
     $scope.goToAnswer = function () {
         $modalInstance.close();
         $stateParams.category = $scope.category;
@@ -222,12 +227,12 @@ angular.module('app').controller('ModalInstanceCtrl', function ($scope, $modalIn
         });
     };
 
-     $scope.ok2 = function () {
- $modalInstance.close();
-        
+    $scope.ok2 = function () {
+        $modalInstance.close();
+
     };
     $scope.ok = function () {
- $modalInstance.close();
+        $modalInstance.close();
         location.reload();
     };
 
