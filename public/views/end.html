@@ -1,33 +1,28 @@
 <div id="endStage">
     <br/>
-    <br/>
-    <br/>
-    <br/>
     <div id="jumbo" class="jumbotron vertical-center" ng-controller="endController">
         <div class="container">
             <div ng-repeat="item in everything">
                 <div > Question:<br/></div>
                 {{item[0]}}<br/>
                 <div ng-if="item.length == 3">
-                You got the answer right!<br/>
                 <br />
                 Your answer:<br/>
                 {{item[1]}}
                     <br/><br/>
-                    Why this is good: <br />
+                    Why this is correct: <br />
                     {{item[2]}}<br/><br/><hr class="fullLenth">
                 </div>
                  <div ng-if="item.length != 3">
-                You got the answer wrong.<br/>
                 <br />
                 Your answer:<br/>
                 {{item[1]}}
                     <br/><br/>
-                    Why this is good: <br />
+                    Why this answer is wrong: <br />
                     {{item[2]}}<br/><br/>
-                     Correct ansnwer: <br/>
+                     Correct answer: <br/>
                      {{item[3]}}<br/><br/>
-                     Why this is good:<br />
+                     Why this answer is correct:<br />
                      {{item[4]}}<br/><br/><hr class="fullLenth">
                      
                      
