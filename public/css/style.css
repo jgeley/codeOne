@@ -245,6 +245,10 @@ margin-bottom: 0px;
       border-radius: 0px;
 }
 
+.btn{
+    white-space:normal !important;
+    word-wrap:break-word; 
+}
 .fullLength{
     max-width=100%;
 }
