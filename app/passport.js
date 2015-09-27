@@ -160,6 +160,12 @@ module.exports = function (app) {
         console.log(__dirname);
         res.render('main.html');
     });
+    app.get('/redirect', function (req, res) {
+        //console.log(__dirname  + '/public/home.html');
+        console.log(__dirname);
+        res.render('views/redirectPage.html');
+    });
+    
     
     app.get('/play', isAuthenticated, function (req, res) {
         //console.log(__dirname  + '/public/home.html');
