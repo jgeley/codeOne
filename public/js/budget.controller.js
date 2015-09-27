@@ -99,7 +99,7 @@
                     //                $scope.salaryLeft -= $scope.budget[$scope.items2[i].value];
                 }
                 if (found) {
-                    $scope.graphData = ([[$scope.budget[j], $scope.average[j]]]).concat($scope.graphData);
+                    $scope.graphData[j] =  [$scope.budget[j], $scope.average[j]];
                     $scope.salaryLeft -= $scope.budget[j];
                 console.log($scope.order[j]);
                     document.getElementById($scope.order[j]).removeAttribute("hidden");
@@ -117,7 +117,7 @@
 
         $scope.$watch("items2",  function (newValue, oldValue, $compile) {
             $scope.salaryLeft = $scope.salary;
-
+            console.log($scope.items2);
             //            $scope.$compile('sdfasd');
             for (var j = $scope.order.length-1; j > -1; j--) {
                 var found = false;
@@ -130,9 +130,9 @@
                     //                $scope.salaryLeft -= $scope.budget[$scope.items2[i].value];
                 }
                 if (found) {
-                    $scope.graphData = ([[$scope.budget[j], $scope.average[j]]]).concat($scope.graphData);
+                   $scope.graphData[j] =  [$scope.budget[j], $scope.average[j]];
                     $scope.salaryLeft -= $scope.budget[j];
-                console.log($scope.order[j]);
+              
                     document.getElementById($scope.order[j]).removeAttribute("hidden");
 
                 } else {
@@ -161,7 +161,7 @@
                     //                $scope.salaryLeft -= $scope.budget[$scope.items2[i].value];
                 }
                 if (found) {
-                    $scope.graphData = ([[$scope.budget[j], $scope.average[j]]]).concat($scope.graphData);
+                   $scope.graphData[j] =  [$scope.budget[j], $scope.average[j]];
                     $scope.salaryLeft -= $scope.budget[j];
                 console.log($scope.order[j]);
                     document.getElementById($scope.order[j]).removeAttribute("hidden");

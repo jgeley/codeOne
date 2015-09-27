@@ -11,8 +11,7 @@ angular.module( 'app').directive( 'dgraph', [
       },
       link: function (scope, element,attr) {
           
-          console.log(scope.barid);
-          console.log(scope.dollars);
+       
            
 
 var grid = d3.range(25).map(function(i){
@@ -37,8 +36,6 @@ var grid = d3.range(25).map(function(i){
         //Render graph based on 'data'
           scope.create = function(colors,dollars,categories,id) {
                       
-//console.log('element');
-//          console.log(scope.barid);
 		var canvas = d3.select("#" +id)
 						.append('svg')
 						.attr({'width':400,'height':75});
@@ -95,8 +92,7 @@ var grid = d3.range(25).map(function(i){
       }
 		
         scope.render = function(colors,dollars,categories,id) {
-            console.log(id);
-           console.log(dollars);
+           
 var transit =  d3.select("."+id+"g").selectAll("rect")
 						    .data(dollars)
 						    .transition()
